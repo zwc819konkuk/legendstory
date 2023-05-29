@@ -1,0 +1,246 @@
+[20:54:46,605] [INFO] ServerMain.main --> 服务器启动成功!
+[20:55:34,739] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = BinaryWebSocketFrame(data: PooledUnsafeDirectByteBuf(ridx: 0, widx: 19, cap: 19))
+[20:55:34,739] [INFO] GameMsgHandler.channelRead0 --> 收到的字节 = 0, 17, 0, 0, 8, 1, 18, 11, 72, 101, 114, 111, 95, 72, 97, 109, 109, 101, 114, 
+[20:55:34,739] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = BinaryWebSocketFrame(data: PooledUnsafeDirectByteBuf(ridx: 0, widx: 4, cap: 4))
+[20:55:34,739] [INFO] GameMsgHandler.channelRead0 --> 收到的字节 = 0, 2, 0, 2, 
+[20:55:54,690] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = BinaryWebSocketFrame(data: PooledUnsafeDirectByteBuf(ridx: 0, widx: 19, cap: 19))
+[20:55:54,690] [INFO] GameMsgHandler.channelRead0 --> 收到的字节 = 0, 17, 0, 0, 8, 1, 18, 11, 72, 101, 114, 111, 95, 72, 97, 109, 109, 101, 114, 
+[20:55:54,690] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = BinaryWebSocketFrame(data: PooledUnsafeDirectByteBuf(ridx: 0, widx: 4, cap: 4))
+[20:55:54,690] [INFO] GameMsgHandler.channelRead0 --> 收到的字节 = 0, 2, 0, 2, 
+[20:56:28,166] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = BinaryWebSocketFrame(data: PooledUnsafeDirectByteBuf(ridx: 0, widx: 10, cap: 10))
+[20:56:28,167] [INFO] GameMsgHandler.channelRead0 --> 收到的字节 = 0, 8, 0, 9, 8, -1, -1, -1, -1, 15, 
+[20:56:29,380] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = BinaryWebSocketFrame(data: PooledUnsafeDirectByteBuf(ridx: 0, widx: 10, cap: 10))
+[20:56:29,381] [INFO] GameMsgHandler.channelRead0 --> 收到的字节 = 0, 8, 0, 9, 8, -1, -1, -1, -1, 15, 
+[21:34:01,480] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = BinaryWebSocketFrame(data: PooledUnsafeDirectByteBuf(ridx: 0, widx: 19, cap: 19))
+[21:34:01,480] [INFO] GameMsgHandler.channelRead0 --> 收到的字节 = 0, 17, 0, 0, 8, 1, 18, 11, 72, 101, 114, 111, 95, 72, 97, 109, 109, 101, 114, 
+[21:34:01,481] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = BinaryWebSocketFrame(data: PooledUnsafeDirectByteBuf(ridx: 0, widx: 4, cap: 4))
+[21:34:01,481] [INFO] GameMsgHandler.channelRead0 --> 收到的字节 = 0, 2, 0, 2, 
+[21:34:06,190] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = BinaryWebSocketFrame(data: PooledUnsafeDirectByteBuf(ridx: 0, widx: 10, cap: 10))
+[21:34:06,190] [INFO] GameMsgHandler.channelRead0 --> 收到的字节 = 0, 8, 0, 9, 8, -1, -1, -1, -1, 15, 
+[21:34:12,357] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = BinaryWebSocketFrame(data: PooledUnsafeDirectByteBuf(ridx: 0, widx: 10, cap: 10))
+[21:34:12,357] [INFO] GameMsgHandler.channelRead0 --> 收到的字节 = 0, 8, 0, 9, 8, -1, -1, -1, -1, 15, 
+[21:34:13,039] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = BinaryWebSocketFrame(data: PooledUnsafeDirectByteBuf(ridx: 0, widx: 10, cap: 10))
+[21:34:13,039] [INFO] GameMsgHandler.channelRead0 --> 收到的字节 = 0, 8, 0, 9, 8, -1, -1, -1, -1, 15, 
+[21:34:13,868] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = BinaryWebSocketFrame(data: PooledUnsafeDirectByteBuf(ridx: 0, widx: 14, cap: 14))
+[21:34:13,868] [INFO] GameMsgHandler.channelRead0 --> 收到的字节 = 0, 12, 0, 4, 13, -66, 17, 5, -61, 21, 15, 114, 87, -62, 
+[21:34:16,049] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = BinaryWebSocketFrame(data: PooledUnsafeDirectByteBuf(ridx: 0, widx: 14, cap: 14))
+[21:34:16,049] [INFO] GameMsgHandler.channelRead0 --> 收到的字节 = 0, 12, 0, 4, 13, -30, 27, -47, -61, 21, -48, 22, -85, -62, 
+[22:06:03,443] [INFO] ServerMain.main --> 服务器启动成功!
+[22:06:22,486] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = userId: 1
+heroAvatar: "Hero_Hammer"
+
+[22:06:22,487] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.ClassCastException: org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd cannot be cast to io.netty.handler.codec.http.websocketx.BinaryWebSocketFrame
+	at org.tinygame.legendstory.GameMsgHandler.channelRead0(GameMsgHandler.java:24)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at org.tinygame.legendstory.GameMsgDecoder.channelRead(GameMsgDecoder.java:36)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+	at io.netty.handler.codec.http.websocketx.Utf8FrameValidator.channelRead(Utf8FrameValidator.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler$1.channelRead(WebSocketServerProtocolHandler.java:272)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:326)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:313)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:427)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:281)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[22:08:32,940] [INFO] ServerMain.main --> 服务器启动成功!
+[22:08:39,453] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 1
+heroAvatar: "Hero_Hammer"
+
+[22:09:44,353] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 2
+heroAvatar: "Hero_Shaman"
+
+[22:22:52,222] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: ?程主机强迫??了一??有的?接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[22:22:55,418] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: ?程主机强迫??了一??有的?接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[22:22:59,627] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: ?程主机强迫??了一??有的?接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[22:22:59,844] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: ?程主机强迫??了一??有的?接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[22:28:57,577] [INFO] ServerMain.main --> 服务器启动成功!
+[22:29:05,993] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 1
+heroAvatar: "Hero_Hammer"
+
+[22:29:08,542] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 2
+heroAvatar: "Hero_Shaman"
+
+[22:29:21,592] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 1
+heroAvatar: "Hero_Hammer"
+
+[22:29:46,458] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 1
+heroAvatar: "Hero_Hammer"
+
+[22:29:48,958] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 2
+heroAvatar: "Hero_Shaman"
+
+[22:32:29,721] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 3
+heroAvatar: "Hero_Skeleton"
+
+[22:47:56,640] [INFO] ServerMain.main --> 服务器启动成功!
+[22:48:01,119] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 1
+heroAvatar: "Hero_Hammer"
+
+[22:48:01,136] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmdmsg=
+[22:48:08,505] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 2
+heroAvatar: "Hero_Shaman"
+
+[22:48:08,506] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmdmsg=
+[22:48:12,142] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 3
+heroAvatar: "Hero_Skeleton"
+
+[22:48:12,142] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmdmsg=
+[22:48:19,608] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 1
+heroAvatar: "Hero_Hammer"
+
+[22:48:19,609] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmdmsg=
+[23:02:46,292] [INFO] ServerMain.main --> 服务器启动成功!
+[23:02:53,854] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 1
+heroAvatar: "Hero_Hammer"
+
+[23:02:53,860] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmdmsg=
+[23:03:02,710] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 2
+heroAvatar: "Hero_Shaman"
+
+[23:03:02,711] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmdmsg=
+[23:03:09,341] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 3
+heroAvatar: "Hero_Skeleton"
+
+[23:03:09,342] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmdmsg=
+[23:03:17,939] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmdmsg=moveToPosX: -397.62375
+moveToPosY: 128.31683
+
+[23:03:20,623] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmdmsg=moveToPosX: -337.42575
+moveToPosY: -85.544556
+
+[23:03:31,908] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 1
+heroAvatar: "Hero_Hammer"
+
+[23:03:31,909] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmdmsg=
+[23:03:34,128] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmdmsg=moveToPosX: -331.0891
+moveToPosY: 82.376236
+
+[23:03:45,092] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 2
+heroAvatar: "Hero_Shaman"
+
+[23:03:45,092] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmdmsg=
+[23:03:48,950] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmdmsg=moveToPosX: -169.50494
+moveToPosY: 14.257425
+
+[23:05:32,427] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmdmsg=userId: 1
+heroAvatar: "Hero_Hammer"
+
+[23:05:32,428] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmdmsg=
+[23:05:36,113] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmdmsg=moveToPosX: -381.78217
+moveToPosY: 7.920792
+
+[23:05:45,044] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmdmsg=moveToPosX: 164.75247
+moveToPosY: 115.64356
+
+[23:05:48,464] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmdmsg=moveToPosX: -239.20792
+moveToPosY: 74.455444
+
+[23:06:03,308] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmdmsg=moveToPosX: 148.91089
+moveToPosY: 79.207924
+
+[23:06:38,548] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msg = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmdmsg=moveToPosX: -161.58415
+moveToPosY: -19.009901
+
