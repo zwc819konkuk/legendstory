@@ -50,17 +50,16 @@ public class ServerMain {
                         new HttpServerCodec(), // Http 服务器编解码器
                         new HttpObjectAggregator(65535), // 内容长度限制
                         new WebSocketServerProtocolHandler("/websocket"), // WebSocket 协议处理器, 在这里处理握手、ping、pong 等消息
-                        new GameMsgDecoder(),//自定义消息解码器
-                        new GameMsgEncoder(),//自定义消息编码器
+                        new GameMsgDecoder(), // 自定义的消息解码器
+                        new GameMsgEncoder(), // 自定义的消息编码器
                         new GameMsgHandler() // 自定义的消息处理器
-
                 );
             }
         });
 
         try {
             // 绑定 12345 端口,
-            // 注意: 实际项目中会使用 argvArray 中的参数来指定端口号
+            // 注意: 实际项目中会使用 argArray 中的参数来指定端口号
             ChannelFuture f = b.bind(SERVER_PORT).sync();
 
             if (f.isSuccess()) {
@@ -71,7 +70,7 @@ public class ServerMain {
             // 也就是不要立即退出应用程序, 让应用程序可以一直提供服务
             f.channel().closeFuture().sync();
         } catch (Exception ex) {
-            // 记录错误日志
+            // 如果遇到异常, 打印详细信息...
             LOGGER.error(ex.getMessage(), ex);
         } finally {
             // 关闭服务器, 大家都歇了吧
