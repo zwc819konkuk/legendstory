@@ -6,10 +6,7 @@ import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.util.AttributeKey;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.tinygame.legendstory.cmdHandler.ICmdHandler;
-import org.tinygame.legendstory.cmdHandler.UserEntryCmdHandler;
-import org.tinygame.legendstory.cmdHandler.UserMoveToCmdHandler;
-import org.tinygame.legendstory.cmdHandler.WhoElseIsHereCmdHandler;
+import org.tinygame.legendstory.cmdHandler.*;
 
 import org.tinygame.legendstory.model.UserManager;
 import org.tinygame.legendstory.msg.GameMsgProtocol;
@@ -65,20 +62,26 @@ public class GameMsgHandler extends SimpleChannelInboundHandler<Object> {
             return;
         }
 
-        LOGGER.info(
-                "收到客户端消息, msgClazz = {}, msgObj = {}",
-                msg.getClass().getName(),
-                msg
-        );
+        LOGGER.info("收到客户端消息, msgClazz = {}, msgObj = {}", msg.getClass().getName(), msg);
 
-        ICmdHandler<? extends GeneratedMessageV3> cmdHandler = null;
+        ICmdHandler<? extends GeneratedMessageV3> cmdHandler = CmdHandlerFactory.create(msg.getClass());
 
-        if (msg instanceof GameMsgProtocol.UserEntryCmd) {
-            new UserEntryCmdHandler().handle(ctx, (GameMsgProtocol.UserEntryCmd) msg);
-        } else if (msg instanceof GameMsgProtocol.WhoElseIsHereCmd) {
-            new WhoElseIsHereCmdHandler().handle(ctx, (GameMsgProtocol.WhoElseIsHereCmd) msg);
-        } else if (msg instanceof GameMsgProtocol.UserMoveToCmd) {
-            new UserMoveToCmdHandler().handle(ctx, (GameMsgProtocol.UserMoveToCmd) msg);
+        if(null != cmdHandler){
+            cmdHandler.handle(ctx,cast(msg));
+        }
+    }
+
+    /**
+     * 转型消息对象
+     * @param msg
+     * @return
+     * @param <Tcmd>
+     */
+    static private <Tcmd extends GeneratedMessageV3> Tcmd cast(Object msg){
+        if (null == msg){
+            return null;
+        }else {
+            return (Tcmd) msg;
         }
     }
 }

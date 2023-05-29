@@ -13,6 +13,7 @@ import io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler;
 import org.apache.log4j.PropertyConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.tinygame.legendstory.cmdHandler.CmdHandlerFactory;
 
 /**
  * 服务器入口类
@@ -34,8 +35,7 @@ public class ServerMain {
      * @param argvArray 命令行参数数组
      */
     static public void main(String[] argvArray) {
-        // 设置 log4j 属性文件
-        PropertyConfigurator.configure(ServerMain.class.getClassLoader().getResourceAsStream("log4j.properties"));
+        CmdHandlerFactory.init();
 
         EventLoopGroup bossGroup = new NioEventLoopGroup();   // 拉客的, 也就是故事中的美女
         EventLoopGroup workerGroup = new NioEventLoopGroup(); // 干活的, 也就是故事中的服务生

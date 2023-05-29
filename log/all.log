@@ -1,1 +1,114 @@
-[01:29:25,297] [INFO] ServerMain.main --> server start successfully...
+[01:00:22,286] [INFO] ServerMain.main --> 服务器启动成功!
+[01:03:13,786] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd, msgObj = userId: 1
+heroAvatar: "Hero_Hammer"
+
+[01:03:13,794] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd, msgObj = 
+[01:03:19,765] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd, msgObj = userId: 2
+heroAvatar: "Hero_Shaman"
+
+[01:03:19,767] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd, msgObj = 
+[01:03:22,872] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: -384.16885
+moveToPosY: 17.730871
+
+[01:03:24,403] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: 147.87286
+moveToPosY: 66.50367
+
+[01:03:27,394] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: -107.18826
+moveToPosY: 22.689487
+
+[01:03:37,232] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd, msgObj = userId: 2
+heroAvatar: "Hero_Shaman"
+
+[01:03:37,234] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd, msgObj = 
+[01:03:40,911] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: -154.51187
+moveToPosY: 41.372032
+
+[01:03:48,012] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd, msgObj = userId: 3
+heroAvatar: "Hero_Skeleton"
+
+[01:03:48,014] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd, msgObj = 
+[01:03:53,496] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: -190.12225
+moveToPosY: 55.55012
+
+[01:03:55,456] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: 74.32763
+moveToPosY: 3.9119804
+
+[01:04:44,829] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd, msgObj = userId: 1
+heroAvatar: "Hero_Hammer"
+
+[01:04:44,832] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd, msgObj = 
+[01:04:48,315] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd, msgObj = userId: 1
+heroAvatar: "Hero_Hammer"
+
+[01:04:48,317] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd, msgObj = 
+[01:04:50,046] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd, msgObj = userId: 3
+heroAvatar: "Hero_Skeleton"
+
+[01:04:50,048] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd, msgObj = 
+[01:05:01,538] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: 176.46439
+moveToPosY: 66.70184
+
+[01:05:02,949] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: -251.14914
+moveToPosY: 124.40098
+
+[01:05:10,666] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd, msgObj = userId: 1
+heroAvatar: "Hero_Hammer"
+
+[01:05:10,668] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd, msgObj = 
+[01:05:11,746] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: -169.77995
+moveToPosY: 71.198044
+
+[01:05:13,599] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: 228.81267
+moveToPosY: 29.55145
+
+[01:05:14,268] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: 17.730871
+moveToPosY: 10.9762535
+
+[01:05:16,302] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: -144.74327
+moveToPosY: 72.76283
+
+[01:05:26,321] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd, msgObj = userId: 1
+heroAvatar: "Hero_Hammer"
+
+[01:05:26,322] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd, msgObj = 
+[01:05:28,711] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: -161.2665
+moveToPosY: 90.34301
+
+[01:05:31,360] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: -178.15303
+moveToPosY: 51.50396
+
+[01:05:32,497] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: -129.09535
+moveToPosY: -19.559902
+
+[01:05:35,112] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: 107.22955
+moveToPosY: 169.70976
+
+[01:05:38,420] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd, msgObj = userId: 1
+heroAvatar: "Hero_Hammer"
+
+[01:05:38,422] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd, msgObj = 
+[01:05:39,240] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: -313.74084
+moveToPosY: 3.9119804
+
+[01:05:42,233] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: 208.54881
+moveToPosY: 56.56992
+
+[01:05:43,810] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: -267.6517
+moveToPosY: 59.94723
+
+[01:05:45,868] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd, msgObj = userId: 1
+heroAvatar: "Hero_Hammer"
+
+[01:05:45,869] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd, msgObj = 
+[01:05:46,817] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: -135.93668
+moveToPosY: 59.94723
+
+[01:05:49,312] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: -90.34301
+moveToPosY: 70.079155
+
+[01:05:55,928] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: 227.12401
+moveToPosY: 29.55145
+
+[01:05:58,144] [INFO] GameMsgHandler.channelRead0 --> 收到客户端消息, msgClazz = org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd, msgObj = moveToPosX: 330.13193
+moveToPosY: 129.18205
+
