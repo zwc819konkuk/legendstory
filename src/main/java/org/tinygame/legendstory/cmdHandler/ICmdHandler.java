@@ -2,7 +2,6 @@ package org.tinygame.legendstory.cmdHandler;
 
 import com.google.protobuf.GeneratedMessageV3;
 import io.netty.channel.ChannelHandlerContext;
-import org.tinygame.legendstory.msg.GameMsgProtocol;
 
 /**
  * 指令处理器接口

@@ -1,7 +1,6 @@
 package org.tinygame.legendstory;
 
 
-import com.google.protobuf.GeneratedMessageV3;
 import com.google.protobuf.Message;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
@@ -9,7 +8,6 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.codec.http.websocketx.BinaryWebSocketFrame;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.tinygame.legendstory.msg.GameMsgProtocol;
 
 public class GameMsgDecoder extends ChannelInboundHandlerAdapter {
 
