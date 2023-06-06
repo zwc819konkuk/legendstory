@@ -9,25 +9,28 @@ import org.tinygame.legendstory.msg.GameMsgProtocol;
 
 public class UserEntryCmdHandler implements ICmdHandler<GameMsgProtocol.UserEntryCmd>{
     @Override
-    public  void handle(ChannelHandlerContext ctx, GameMsgProtocol.UserEntryCmd msg) {
-        // 从指令对象中获取用户 Id 和英雄形象
-        GameMsgProtocol.UserEntryCmd cmd = msg;
-        int userId = cmd.getUserId();
-        String heroAvatar = cmd.getHeroAvatar();
+    public  void handle(ChannelHandlerContext ctx, GameMsgProtocol.UserEntryCmd cmd) {
 
+        if (null == ctx || null == cmd){
+            return;
+        }
+
+        // 获取用户 Id 和英雄形象
+        Integer userId = (Integer) ctx.channel().attr(AttributeKey.valueOf("userId")).get();
+        if (null == userId){
+            return;
+        }
+
+        //获取已存在的用户
+        User existUser = UserManager.getUserById(userId);
+        if (null ==existUser){
+            return;
+        }
+
+        String heroAvatar = existUser.heroAvatar;
         GameMsgProtocol.UserEntryResult.Builder resultBuilder = GameMsgProtocol.UserEntryResult.newBuilder();
         resultBuilder.setUserId(userId);
         resultBuilder.setHeroAvatar(heroAvatar);
-
-        // 将用户加入字典
-        User newUser = new User();
-        newUser.userId = userId;
-        newUser.heroAvatar = heroAvatar;
-        newUser.currHp = 100;
-        UserManager.addUser(newUser);
-
-        // 将用户 Id 附着到 Channel
-        ctx.channel().attr(AttributeKey.valueOf("userId")).set(userId);
 
         // 构建结果并发送
         GameMsgProtocol.UserEntryResult newResult = resultBuilder.build();

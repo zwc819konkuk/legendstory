@@ -58,30 +58,8 @@ public class GameMsgHandler extends SimpleChannelInboundHandler<Object> {
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
-        if (null == ctx || null == msg) {
-            return;
-        }
-
-        LOGGER.info("收到客户端消息, msgClazz = {}, msgObj = {}", msg.getClass().getName(), msg);
-
-        ICmdHandler<? extends GeneratedMessageV3> cmdHandler = CmdHandlerFactory.create(msg.getClass());
-
-        if(null != cmdHandler){
-            cmdHandler.handle(ctx,cast(msg));
-        }
-    }
-
-    /**
-     * 转型消息对象
-     * @param msg
-     * @return
-     * @param <Tcmd>
-     */
-    static private <Tcmd extends GeneratedMessageV3> Tcmd cast(Object msg){
-        if (null == msg){
-            return null;
-        }else {
-            return (Tcmd) msg;
+        if (msg instanceof GeneratedMessageV3){
+            MainThreadProcessor.getInstance().process(ctx,(GeneratedMessageV3) msg);
         }
     }
 }
