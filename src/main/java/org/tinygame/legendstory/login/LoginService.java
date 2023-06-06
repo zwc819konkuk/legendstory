@@ -42,6 +42,7 @@ public class LoginService {
         if (null == userName || null == password) {
             return null;
         }
+        LOGGER.info("current thread = {}",Thread.currentThread().getName());
         try (SqlSession mySqlSession = MysqlSessionFactory.openSession()) {
             //获取Dao
             IUserDao dao = mySqlSession.getMapper(IUserDao.class);
@@ -50,7 +51,7 @@ public class LoginService {
             UserEntity userEntity = dao.getUserByName(userName);
 
             if (null != userEntity) {
-                if (password.equals(userEntity.password)) {
+                if (!password.equals(userEntity.password)) {
                     LOGGER.error("用户密码错误，userName = {}", userName);
                     throw new RuntimeException("用户密码错误");
                 }

@@ -8,7 +8,7 @@
         <result property="heroAvatar" column="hero_avatar"/>
     </resultMap>
 
-    <select id="getByUserName" resultMap="userEntity">
+    <select id="getUserByName" resultMap="userEntity">
         SELECT user_id, user_name, `password`, hero_avatar FROM t_user WHERE user_name = #{userName};
     </select>
 

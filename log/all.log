@@ -210,3 +210,618 @@ moveFromPosY: -70.19355
 [18:22:03,121] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <=> 0
 [18:22:03,597] [INFO] ServerMain.main --> 服务器启动成功!
 [18:23:46,095] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:27:54,376] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[19:27:54,442] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <==> org.tinygame.legendstory.cmdHandler.UserAttkCmdHandler
+[19:27:54,443] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> org.tinygame.legendstory.cmdHandler.WhoElseIsHereCmdHandler
+[19:27:54,444] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <==> org.tinygame.legendstory.cmdHandler.UserMoveToCmdHandler
+[19:27:54,445] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <==> org.tinygame.legendstory.cmdHandler.UserEntryCmdHandler
+[19:27:54,446] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <==> org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler
+[19:27:54,468] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroResult <=> 16
+[19:27:54,469] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroCmd <=> 15
+[19:27:54,471] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginResult <=> 14
+[19:27:54,472] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <=> 13
+[19:27:54,473] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserDieResult <=> 12
+[19:27:54,474] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserSubtractHpResult <=> 11
+[19:27:54,475] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkResult <=> 10
+[19:27:54,476] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <=> 9
+[19:27:54,477] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopResult <=> 8
+[19:27:54,478] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopCmd <=> 7
+[19:27:54,479] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserQuitResult <=> 6
+[19:27:54,481] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToResult <=> 5
+[19:27:54,482] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <=> 4
+[19:27:54,484] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereResult <=> 3
+[19:27:54,485] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <=> 2
+[19:27:54,486] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryResult <=> 1
+[19:27:54,487] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <=> 0
+[19:29:30,927] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[19:29:30,987] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <==> org.tinygame.legendstory.cmdHandler.UserAttkCmdHandler
+[19:29:30,989] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> org.tinygame.legendstory.cmdHandler.WhoElseIsHereCmdHandler
+[19:29:30,990] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <==> org.tinygame.legendstory.cmdHandler.UserMoveToCmdHandler
+[19:29:30,990] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <==> org.tinygame.legendstory.cmdHandler.UserEntryCmdHandler
+[19:29:30,991] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <==> org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler
+[19:29:31,015] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroResult <=> 16
+[19:29:31,017] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroCmd <=> 15
+[19:29:31,019] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginResult <=> 14
+[19:29:31,020] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <=> 13
+[19:29:31,022] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserDieResult <=> 12
+[19:29:31,024] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserSubtractHpResult <=> 11
+[19:29:31,025] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkResult <=> 10
+[19:29:31,026] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <=> 9
+[19:29:31,027] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopResult <=> 8
+[19:29:31,029] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopCmd <=> 7
+[19:29:31,031] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserQuitResult <=> 6
+[19:29:31,032] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToResult <=> 5
+[19:29:31,033] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <=> 4
+[19:29:31,036] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereResult <=> 3
+[19:29:31,037] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <=> 2
+[19:29:31,039] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryResult <=> 1
+[19:29:31,040] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <=> 0
+[19:30:42,211] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[19:30:42,270] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <==> org.tinygame.legendstory.cmdHandler.UserAttkCmdHandler
+[19:30:42,272] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> org.tinygame.legendstory.cmdHandler.WhoElseIsHereCmdHandler
+[19:30:42,273] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <==> org.tinygame.legendstory.cmdHandler.UserMoveToCmdHandler
+[19:30:42,274] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <==> org.tinygame.legendstory.cmdHandler.UserEntryCmdHandler
+[19:30:42,275] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <==> org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler
+[19:30:42,297] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroResult <=> 16
+[19:30:42,299] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroCmd <=> 15
+[19:30:42,300] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginResult <=> 14
+[19:30:42,302] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <=> 13
+[19:30:42,303] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserDieResult <=> 12
+[19:30:42,305] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserSubtractHpResult <=> 11
+[19:30:42,307] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkResult <=> 10
+[19:30:42,308] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <=> 9
+[19:30:42,309] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopResult <=> 8
+[19:30:42,310] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopCmd <=> 7
+[19:30:42,311] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserQuitResult <=> 6
+[19:30:42,313] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToResult <=> 5
+[19:30:42,314] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <=> 4
+[19:30:42,316] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereResult <=> 3
+[19:30:42,317] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <=> 2
+[19:30:42,318] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryResult <=> 1
+[19:30:42,320] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <=> 0
+[19:30:42,648] [INFO] ServerMain.main --> 服务器启动成功!
+[19:34:21,772] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:34:21,788] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:34:21,791] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:34:31,410] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:34:31,413] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:34:31,415] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:34:31,921] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:34:31,922] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:34:31,923] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:34:32,114] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:34:32,114] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:34:32,115] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:34:32,310] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:34:32,310] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:34:32,311] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:34:32,482] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:34:32,482] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:34:32,483] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:34:32,658] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:34:32,661] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:34:32,662] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:34:32,857] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:34:32,858] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:34:32,861] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:34:33,077] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:34:33,078] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:34:33,079] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:34:33,524] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:34:33,525] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:34:33,525] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:34:33,714] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:34:33,714] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:34:33,715] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:34:33,909] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:34:33,910] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:34:33,910] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:34:34,109] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:34:34,109] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:34:34,110] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:34:41,910] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:34:41,912] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:34:41,913] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:34:47,888] [INFO] UserLoginCmdHandler.handle --> username = q, password = 1
+[19:34:47,890] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:34:47,890] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = q
+[19:34:48,643] [INFO] UserLoginCmdHandler.handle --> username = q, password = 1
+[19:34:48,647] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:34:48,647] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = q
+[19:35:03,674] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:35:03,676] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:35:03,676] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:35:04,560] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:35:04,561] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:35:04,561] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:35:04,798] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:35:04,798] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:35:04,799] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:35:05,040] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:35:05,041] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:35:05,041] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:35:05,293] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:35:05,293] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:35:05,294] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:35:19,305] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:35:19,306] [ERROR] LoginService.userLogin --> Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): org.tinygame.legendstory.login.db.IUserDao.getUserByName
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedMapperMethod$0(MapperProxy.java:98)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.binding.MapperProxy.cachedMapperMethod(MapperProxy.java:97)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:92)
+	at com.sun.proxy.$Proxy5.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:50)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:35:19,307] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:41:17,126] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[19:41:17,183] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <==> org.tinygame.legendstory.cmdHandler.UserAttkCmdHandler
+[19:41:17,184] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> org.tinygame.legendstory.cmdHandler.WhoElseIsHereCmdHandler
+[19:41:17,185] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <==> org.tinygame.legendstory.cmdHandler.UserMoveToCmdHandler
+[19:41:17,186] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <==> org.tinygame.legendstory.cmdHandler.UserEntryCmdHandler
+[19:41:17,187] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <==> org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler
+[19:41:17,209] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroResult <=> 16
+[19:41:17,210] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroCmd <=> 15
+[19:41:17,212] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginResult <=> 14
+[19:41:17,214] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <=> 13
+[19:41:17,215] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserDieResult <=> 12
+[19:41:17,216] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserSubtractHpResult <=> 11
+[19:41:17,217] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkResult <=> 10
+[19:41:17,219] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <=> 9
+[19:41:17,220] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopResult <=> 8
+[19:41:17,221] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopCmd <=> 7
+[19:41:17,222] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserQuitResult <=> 6
+[19:41:17,224] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToResult <=> 5
+[19:41:17,225] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <=> 4
+[19:41:17,227] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereResult <=> 3
+[19:41:17,228] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <=> 2
+[19:41:17,230] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryResult <=> 1
+[19:41:17,231] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <=> 0
+[19:41:17,692] [INFO] ServerMain.main --> 服务器启动成功!
+[19:41:33,050] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:42:23,749] [INFO] UserLoginCmdHandler.handle --> username = a, password = w
+[19:42:50,660] [INFO] UserLoginCmdHandler.handle --> username = a, password = y
+[19:47:09,884] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[19:47:09,938] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <==> org.tinygame.legendstory.cmdHandler.UserAttkCmdHandler
+[19:47:09,939] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> org.tinygame.legendstory.cmdHandler.WhoElseIsHereCmdHandler
+[19:47:09,940] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <==> org.tinygame.legendstory.cmdHandler.UserMoveToCmdHandler
+[19:47:09,941] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <==> org.tinygame.legendstory.cmdHandler.UserEntryCmdHandler
+[19:47:09,942] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <==> org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler
+[19:47:09,963] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroResult <=> 16
+[19:47:09,964] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroCmd <=> 15
+[19:47:09,965] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginResult <=> 14
+[19:47:09,967] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <=> 13
+[19:47:09,968] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserDieResult <=> 12
+[19:47:09,969] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserSubtractHpResult <=> 11
+[19:47:09,970] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkResult <=> 10
+[19:47:09,971] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <=> 9
+[19:47:09,972] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopResult <=> 8
+[19:47:09,974] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopCmd <=> 7
+[19:47:09,975] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserQuitResult <=> 6
+[19:47:09,977] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToResult <=> 5
+[19:47:09,978] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <=> 4
+[19:47:09,980] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereResult <=> 3
+[19:47:09,981] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <=> 2
+[19:47:09,982] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryResult <=> 1
+[19:47:09,983] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <=> 0
+[19:47:10,246] [INFO] ServerMain.main --> 服务器启动成功!
+[19:47:20,270] [INFO] UserLoginCmdHandler.handle --> username = a, password = 2
+[19:47:20,498] [ERROR] LoginService.userLogin --> 用户密码错误，userName = a
+[19:47:20,498] [ERROR] LoginService.userLogin --> 用户密码错误
+java.lang.RuntimeException: 用户密码错误
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:55)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:47:20,500] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
+[19:47:26,925] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[19:48:29,007] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[19:48:29,062] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <==> org.tinygame.legendstory.cmdHandler.UserAttkCmdHandler
+[19:48:29,063] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> org.tinygame.legendstory.cmdHandler.WhoElseIsHereCmdHandler
+[19:48:29,064] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <==> org.tinygame.legendstory.cmdHandler.UserMoveToCmdHandler
+[19:48:29,065] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <==> org.tinygame.legendstory.cmdHandler.UserEntryCmdHandler
+[19:48:29,066] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <==> org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler
+[19:48:29,088] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroResult <=> 16
+[19:48:29,090] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroCmd <=> 15
+[19:48:29,092] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginResult <=> 14
+[19:48:29,093] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <=> 13
+[19:48:29,094] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserDieResult <=> 12
+[19:48:29,096] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserSubtractHpResult <=> 11
+[19:48:29,097] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkResult <=> 10
+[19:48:29,098] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <=> 9
+[19:48:29,099] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopResult <=> 8
+[19:48:29,100] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopCmd <=> 7
+[19:48:29,102] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserQuitResult <=> 6
+[19:48:29,103] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToResult <=> 5
+[19:48:29,105] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <=> 4
+[19:48:29,107] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereResult <=> 3
+[19:48:29,107] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <=> 2
+[19:48:29,109] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryResult <=> 1
+[19:48:29,110] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <=> 0
+[19:48:29,375] [INFO] ServerMain.main --> 服务器启动成功!
+[19:48:43,807] [INFO] UserLoginCmdHandler.handle --> username = a, password = 2
+[19:48:43,810] [INFO] LoginService.userLogin --> current thread = MainThreadProcessor
+[19:48:44,029] [ERROR] LoginService.userLogin --> 用户密码错误，userName = a
+[19:48:44,029] [ERROR] LoginService.userLogin --> 用户密码错误
+java.lang.RuntimeException: 用户密码错误
+	at org.tinygame.legendstory.login.LoginService.userLogin(LoginService.java:56)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:28)
+	at org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler.handle(UserLoginCmdHandler.java:13)
+	at org.tinygame.legendstory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[19:48:44,031] [ERROR] UserLoginCmdHandler.handle --> 用户登陆失败，userName = a
