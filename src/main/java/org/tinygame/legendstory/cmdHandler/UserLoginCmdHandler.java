@@ -11,7 +11,7 @@ import org.tinygame.legendstory.model.User;
 import org.tinygame.legendstory.model.UserManager;
 import org.tinygame.legendstory.msg.GameMsgProtocol;
 
-public class UserLoginCmdHandler implements ICmdHandler<GameMsgProtocol.UserLoginCmd>{
+public class UserLoginCmdHandler implements ICmdHandler<GameMsgProtocol.UserLoginCmd> {
 
     static private final Logger LOGGER = LoggerFactory.getLogger(UserLoginCmdHandler.class);
 
@@ -23,26 +23,19 @@ public class UserLoginCmdHandler implements ICmdHandler<GameMsgProtocol.UserLogi
                 cmd.getPassword()
         );
 
-        AsyncOperationProcessor.getInstance().process(() -> {
-            UserEntity userEntity = null;
 
-            try {
-                userEntity = LoginService.getInstance().userLogin(
-                        cmd.getUserName(),
-                        cmd.getPassword()
-                );
-            } catch (Exception e){
-                LOGGER.error(e.getMessage(),e);
+        LoginService.getInstance().userLogin(cmd.getUserName(), cmd.getPassword(), (userEntity) -> {
+            if (null == userEntity) {
+                LOGGER.error("用户登陆失败，userName = {}", cmd.getUserName());
+                return null;
             }
-            if (null == userEntity){
-                LOGGER.error("用户登陆失败，userName = {}" ,cmd.getUserName());
-                return;
-            }
-
-
+            LOGGER.error("当前线程 = {}", Thread.currentThread().getName());
+            LOGGER.info("用户登陆成功，userId={} , userName = {}",
+                    userEntity.userId,
+                    userEntity.userName
+            );
             int userId = userEntity.userId;
             String heroAvatar = userEntity.heroAvatar;
-
 
 
             // 新建用户
@@ -64,6 +57,9 @@ public class UserLoginCmdHandler implements ICmdHandler<GameMsgProtocol.UserLogi
             //构建结果并发送
             GameMsgProtocol.UserLoginResult newResult = resultBuilder.build();
             ctx.writeAndFlush(newResult);
+            return null;
         });
+
+
     }
 }
