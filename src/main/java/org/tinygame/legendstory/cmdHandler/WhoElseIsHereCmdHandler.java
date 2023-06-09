@@ -4,6 +4,7 @@ import io.netty.channel.ChannelHandlerContext;
 import org.tinygame.legendstory.model.MoveState;
 import org.tinygame.legendstory.model.User;
 import org.tinygame.legendstory.model.UserManager;
+import org.tinygame.legendstory.msg.GameMsgProtocol;
 
 /*
 谁在场指令

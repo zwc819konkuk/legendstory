@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.tinygame.legendstory.login.LoginService;
 import org.tinygame.legendstory.model.User;
 import org.tinygame.legendstory.model.UserManager;
+import org.tinygame.legendstory.msg.GameMsgProtocol;
 
 public class UserLoginCmdHandler implements ICmdHandler<GameMsgProtocol.UserLoginCmd> {
 

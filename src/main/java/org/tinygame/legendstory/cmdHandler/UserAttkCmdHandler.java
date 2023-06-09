@@ -5,6 +5,9 @@ import io.netty.util.AttributeKey;
 import org.tinygame.legendstory.Broadcaster;
 import org.tinygame.legendstory.model.User;
 import org.tinygame.legendstory.model.UserManager;
+import org.tinygame.legendstory.mq.MQProducer;
+import org.tinygame.legendstory.mq.VictorMsg;
+import org.tinygame.legendstory.msg.GameMsgProtocol;
 
 public class UserAttkCmdHandler implements ICmdHandler<GameMsgProtocol.UserAttkCmd>{
     /**
@@ -47,6 +50,13 @@ public class UserAttkCmdHandler implements ICmdHandler<GameMsgProtocol.UserAttkC
         //广播死亡消息
         if (targetUser.currHp <= 0){
             broadcastDie(targetUserId);
+            if (!targetUser.died){
+                targetUser.died = true;
+                VictorMsg mqMsg = new VictorMsg();
+                mqMsg.winnerId = attkUserId;
+                mqMsg.loserId = targetUserId;
+                MQProducer.sendMsg("Victor",mqMsg);
+            }
         }
     }
 

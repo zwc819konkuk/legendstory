@@ -1,0 +1,374 @@
+[22:42:56,242] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[22:42:56,300] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <==> org.tinygame.legendstory.cmdHandler.UserMoveToCmdHandler
+[22:42:56,301] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <==> org.tinygame.legendstory.cmdHandler.UserAttkCmdHandler
+[22:42:56,301] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$GetRankCmd <==> org.tinygame.legendstory.cmdHandler.GetRankCmdHandler
+[22:42:56,303] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> org.tinygame.legendstory.cmdHandler.WhoElseIsHereCmdHandler
+[22:42:56,303] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <==> org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler
+[22:42:56,304] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <==> org.tinygame.legendstory.cmdHandler.UserEntryCmdHandler
+[22:42:56,327] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$GetRankResult <=> 18
+[22:42:56,328] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$GetRankCmd <=> 17
+[22:42:56,329] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroResult <=> 16
+[22:42:56,331] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroCmd <=> 15
+[22:42:56,332] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginResult <=> 14
+[22:42:56,333] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <=> 13
+[22:42:56,334] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserDieResult <=> 12
+[22:42:56,335] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserSubtractHpResult <=> 11
+[22:42:56,336] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkResult <=> 10
+[22:42:56,338] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <=> 9
+[22:42:56,340] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopResult <=> 8
+[22:42:56,342] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopCmd <=> 7
+[22:42:56,342] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserQuitResult <=> 6
+[22:42:56,344] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToResult <=> 5
+[22:42:56,345] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <=> 4
+[22:42:56,346] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereResult <=> 3
+[22:42:56,347] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <=> 2
+[22:42:56,349] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryResult <=> 1
+[22:42:56,350] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <=> 0
+[22:43:47,901] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[22:43:47,952] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <==> org.tinygame.legendstory.cmdHandler.UserMoveToCmdHandler
+[22:43:47,954] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <==> org.tinygame.legendstory.cmdHandler.UserAttkCmdHandler
+[22:43:47,955] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$GetRankCmd <==> org.tinygame.legendstory.cmdHandler.GetRankCmdHandler
+[22:43:47,955] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> org.tinygame.legendstory.cmdHandler.WhoElseIsHereCmdHandler
+[22:43:47,956] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <==> org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler
+[22:43:47,957] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <==> org.tinygame.legendstory.cmdHandler.UserEntryCmdHandler
+[22:43:47,979] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$GetRankResult <=> 18
+[22:43:47,981] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$GetRankCmd <=> 17
+[22:43:47,982] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroResult <=> 16
+[22:43:47,984] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroCmd <=> 15
+[22:43:47,985] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginResult <=> 14
+[22:43:47,987] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <=> 13
+[22:43:47,988] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserDieResult <=> 12
+[22:43:47,989] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserSubtractHpResult <=> 11
+[22:43:47,990] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkResult <=> 10
+[22:43:47,991] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <=> 9
+[22:43:47,993] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopResult <=> 8
+[22:43:47,995] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopCmd <=> 7
+[22:43:47,996] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserQuitResult <=> 6
+[22:43:47,997] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToResult <=> 5
+[22:43:47,998] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <=> 4
+[22:43:48,000] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereResult <=> 3
+[22:43:48,001] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <=> 2
+[22:43:48,003] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryResult <=> 1
+[22:43:48,004] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <=> 0
+[22:43:52,175] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[22:43:52,231] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <==> org.tinygame.legendstory.cmdHandler.UserMoveToCmdHandler
+[22:43:52,231] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <==> org.tinygame.legendstory.cmdHandler.UserAttkCmdHandler
+[22:43:52,232] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$GetRankCmd <==> org.tinygame.legendstory.cmdHandler.GetRankCmdHandler
+[22:43:52,232] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> org.tinygame.legendstory.cmdHandler.WhoElseIsHereCmdHandler
+[22:43:52,233] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <==> org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler
+[22:43:52,234] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <==> org.tinygame.legendstory.cmdHandler.UserEntryCmdHandler
+[22:43:52,255] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$GetRankResult <=> 18
+[22:43:52,257] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$GetRankCmd <=> 17
+[22:43:52,258] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroResult <=> 16
+[22:43:52,259] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroCmd <=> 15
+[22:43:52,260] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginResult <=> 14
+[22:43:52,261] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <=> 13
+[22:43:52,262] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserDieResult <=> 12
+[22:43:52,263] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserSubtractHpResult <=> 11
+[22:43:52,264] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkResult <=> 10
+[22:43:52,265] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <=> 9
+[22:43:52,268] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopResult <=> 8
+[22:43:52,269] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopCmd <=> 7
+[22:43:52,270] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserQuitResult <=> 6
+[22:43:52,271] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToResult <=> 5
+[22:43:52,272] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <=> 4
+[22:43:52,274] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereResult <=> 3
+[22:43:52,274] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <=> 2
+[22:43:52,276] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryResult <=> 1
+[22:43:52,276] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <=> 0
+[22:44:19,089] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[22:44:19,139] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <==> org.tinygame.legendstory.cmdHandler.UserMoveToCmdHandler
+[22:44:19,140] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <==> org.tinygame.legendstory.cmdHandler.UserAttkCmdHandler
+[22:44:19,141] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$GetRankCmd <==> org.tinygame.legendstory.cmdHandler.GetRankCmdHandler
+[22:44:19,141] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> org.tinygame.legendstory.cmdHandler.WhoElseIsHereCmdHandler
+[22:44:19,142] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <==> org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler
+[22:44:19,143] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <==> org.tinygame.legendstory.cmdHandler.UserEntryCmdHandler
+[22:44:19,165] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$GetRankResult <=> 18
+[22:44:19,167] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$GetRankCmd <=> 17
+[22:44:19,168] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroResult <=> 16
+[22:44:19,170] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroCmd <=> 15
+[22:44:19,171] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginResult <=> 14
+[22:44:19,172] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <=> 13
+[22:44:19,174] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserDieResult <=> 12
+[22:44:19,175] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserSubtractHpResult <=> 11
+[22:44:19,176] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkResult <=> 10
+[22:44:19,177] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <=> 9
+[22:44:19,180] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopResult <=> 8
+[22:44:19,181] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopCmd <=> 7
+[22:44:19,182] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserQuitResult <=> 6
+[22:44:19,183] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToResult <=> 5
+[22:44:19,185] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <=> 4
+[22:44:19,187] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereResult <=> 3
+[22:44:19,188] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <=> 2
+[22:44:19,189] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryResult <=> 1
+[22:44:19,190] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <=> 0
+[22:45:01,191] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[22:45:01,246] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <==> org.tinygame.legendstory.cmdHandler.UserMoveToCmdHandler
+[22:45:01,247] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <==> org.tinygame.legendstory.cmdHandler.UserAttkCmdHandler
+[22:45:01,248] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$GetRankCmd <==> org.tinygame.legendstory.cmdHandler.GetRankCmdHandler
+[22:45:01,249] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> org.tinygame.legendstory.cmdHandler.WhoElseIsHereCmdHandler
+[22:45:01,250] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <==> org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler
+[22:45:01,251] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <==> org.tinygame.legendstory.cmdHandler.UserEntryCmdHandler
+[22:45:01,273] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$GetRankResult <=> 18
+[22:45:01,274] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$GetRankCmd <=> 17
+[22:45:01,275] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroResult <=> 16
+[22:45:01,277] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroCmd <=> 15
+[22:45:01,278] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginResult <=> 14
+[22:45:01,279] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <=> 13
+[22:45:01,281] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserDieResult <=> 12
+[22:45:01,282] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserSubtractHpResult <=> 11
+[22:45:01,283] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkResult <=> 10
+[22:45:01,284] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <=> 9
+[22:45:01,287] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopResult <=> 8
+[22:45:01,288] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopCmd <=> 7
+[22:45:01,289] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserQuitResult <=> 6
+[22:45:01,290] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToResult <=> 5
+[22:45:01,292] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <=> 4
+[22:45:01,293] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereResult <=> 3
+[22:45:01,295] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <=> 2
+[22:45:01,296] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryResult <=> 1
+[22:45:01,297] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <=> 0
+[22:46:08,006] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[22:46:08,056] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <==> org.tinygame.legendstory.cmdHandler.UserMoveToCmdHandler
+[22:46:08,057] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <==> org.tinygame.legendstory.cmdHandler.UserAttkCmdHandler
+[22:46:08,057] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$GetRankCmd <==> org.tinygame.legendstory.cmdHandler.GetRankCmdHandler
+[22:46:08,058] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> org.tinygame.legendstory.cmdHandler.WhoElseIsHereCmdHandler
+[22:46:08,059] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <==> org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler
+[22:46:08,060] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <==> org.tinygame.legendstory.cmdHandler.UserEntryCmdHandler
+[22:46:08,081] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$GetRankResult <=> 18
+[22:46:08,082] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$GetRankCmd <=> 17
+[22:46:08,084] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroResult <=> 16
+[22:46:08,086] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroCmd <=> 15
+[22:46:08,087] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginResult <=> 14
+[22:46:08,088] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <=> 13
+[22:46:08,089] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserDieResult <=> 12
+[22:46:08,090] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserSubtractHpResult <=> 11
+[22:46:08,092] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkResult <=> 10
+[22:46:08,093] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <=> 9
+[22:46:08,096] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopResult <=> 8
+[22:46:08,097] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopCmd <=> 7
+[22:46:08,098] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserQuitResult <=> 6
+[22:46:08,099] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToResult <=> 5
+[22:46:08,100] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <=> 4
+[22:46:08,102] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereResult <=> 3
+[22:46:08,103] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <=> 2
+[22:46:08,104] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryResult <=> 1
+[22:46:08,105] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <=> 0
+[22:47:41,253] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[22:47:41,307] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <==> org.tinygame.legendstory.cmdHandler.UserMoveToCmdHandler
+[22:47:41,308] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <==> org.tinygame.legendstory.cmdHandler.UserAttkCmdHandler
+[22:47:41,309] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$GetRankCmd <==> org.tinygame.legendstory.cmdHandler.GetRankCmdHandler
+[22:47:41,310] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> org.tinygame.legendstory.cmdHandler.WhoElseIsHereCmdHandler
+[22:47:41,311] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <==> org.tinygame.legendstory.cmdHandler.UserLoginCmdHandler
+[22:47:41,312] [INFO] CmdHandlerFactory.init --> 关联 org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <==> org.tinygame.legendstory.cmdHandler.UserEntryCmdHandler
+[22:47:41,335] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$GetRankResult <=> 18
+[22:47:41,336] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$GetRankCmd <=> 17
+[22:47:41,338] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroResult <=> 16
+[22:47:41,339] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$SelectHeroCmd <=> 15
+[22:47:41,341] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginResult <=> 14
+[22:47:41,342] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserLoginCmd <=> 13
+[22:47:41,344] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserDieResult <=> 12
+[22:47:41,345] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserSubtractHpResult <=> 11
+[22:47:41,346] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkResult <=> 10
+[22:47:41,349] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserAttkCmd <=> 9
+[22:47:41,350] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopResult <=> 8
+[22:47:41,352] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserStopCmd <=> 7
+[22:47:41,353] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserQuitResult <=> 6
+[22:47:41,354] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToResult <=> 5
+[22:47:41,355] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserMoveToCmd <=> 4
+[22:47:41,358] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereResult <=> 3
+[22:47:41,359] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$WhoElseIsHereCmd <=> 2
+[22:47:41,361] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryResult <=> 1
+[22:47:41,362] [INFO] GameMsgRecognizer.init --> org.tinygame.legendstory.msg.GameMsgProtocol$UserEntryCmd <=> 0
+[22:47:41,729] [INFO] ServerMain.main --> 服务器启动成功!
+[22:48:13,653] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[22:48:13,656] [INFO] LoginService.userLogin --> current thread = MainThreadProcessor
+[22:48:13,686] [INFO] LoginService$AsyncGetUserByName.doAsync --> current thread = AsyncOperationProcessor1
+[22:48:17,874] [ERROR] LoginService$AsyncGetUserByName.doAsync --> 
+### Error querying database.  Cause: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+### The error may exist in org/tinygame/legendstory/login/db/IUserDao.xml
+### The error may involve org.tinygame.legendstory.login.db.IUserDao.getUserByName
+### The error occurred while executing a query
+### Cause: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+### The error may exist in org/tinygame/legendstory/login/db/IUserDao.xml
+### The error may involve org.tinygame.legendstory.login.db.IUserDao.getUserByName
+### The error occurred while executing a query
+### Cause: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:149)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at com.sun.proxy.$Proxy6.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService$AsyncGetUserByName.doAsync(LoginService.java:117)
+	at org.tinygame.legendstory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:66)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:221)
+	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:216)
+	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.getConnection(UnpooledDataSource.java:95)
+	at org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:422)
+	at org.apache.ibatis.datasource.pooled.PooledDataSource.getConnection(PooledDataSource.java:89)
+	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:138)
+	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.getConnection(JdbcTransaction.java:60)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	... 12 more
+Caused by: com.mysql.cj.exceptions.CJException: Public Key Retrieval is not allowed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:124)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:151)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:49)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:441)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:174)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1348)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:157)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
+	... 33 more
+Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieval is not allowed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:128)
+	... 39 more
+[22:48:17,886] [ERROR] UserLoginCmdHandler.lambda$handle$0 --> 用户登陆失败，userName = a
+[22:48:18,313] [INFO] UserLoginCmdHandler.handle --> username = a, password = 1
+[22:48:18,313] [INFO] LoginService.userLogin --> current thread = MainThreadProcessor
+[22:48:18,313] [INFO] LoginService$AsyncGetUserByName.doAsync --> current thread = AsyncOperationProcessor1
+[22:48:22,346] [ERROR] LoginService$AsyncGetUserByName.doAsync --> 
+### Error querying database.  Cause: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+### The error may exist in org/tinygame/legendstory/login/db/IUserDao.xml
+### The error may involve org.tinygame.legendstory.login.db.IUserDao.getUserByName
+### The error occurred while executing a query
+### Cause: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+### The error may exist in org/tinygame/legendstory/login/db/IUserDao.xml
+### The error may involve org.tinygame.legendstory.login.db.IUserDao.getUserByName
+### The error occurred while executing a query
+### Cause: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:149)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at com.sun.proxy.$Proxy6.getUserByName(Unknown Source)
+	at org.tinygame.legendstory.login.LoginService$AsyncGetUserByName.doAsync(LoginService.java:117)
+	at org.tinygame.legendstory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:66)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:221)
+	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:216)
+	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.getConnection(UnpooledDataSource.java:95)
+	at org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:422)
+	at org.apache.ibatis.datasource.pooled.PooledDataSource.getConnection(PooledDataSource.java:89)
+	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:138)
+	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.getConnection(JdbcTransaction.java:60)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	... 12 more
+Caused by: com.mysql.cj.exceptions.CJException: Public Key Retrieval is not allowed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:124)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:151)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:49)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:441)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:174)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1348)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:157)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
+	... 33 more
+Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieval is not allowed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85)
+	at com.mysql.cj.protocol.a.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:128)
+	... 39 more
+[22:48:22,360] [ERROR] UserLoginCmdHandler.lambda$handle$0 --> 用户登陆失败，userName = a
+[22:49:38,866] [INFO] UserLoginCmdHandler.handle --> username = b, password = 1
+[22:49:38,869] [INFO] LoginService.userLogin --> current thread = MainThreadProcessor
+[22:49:38,871] [INFO] LoginService$AsyncGetUserByName.doAsync --> current thread = AsyncOperationProcessor2
+[22:49:39,069] [ERROR] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
+[22:49:39,069] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登陆成功，userId=2 , userName = b
+[22:51:02,059] [INFO] UserLoginCmdHandler.handle --> username = b, password = 2
+[22:51:02,060] [INFO] LoginService.userLogin --> current thread = MainThreadProcessor
+[22:51:02,061] [INFO] LoginService$AsyncGetUserByName.doAsync --> current thread = AsyncOperationProcessor2
+[22:51:02,083] [ERROR] LoginService$AsyncGetUserByName.doAsync --> 用户密码错误，userName = b
+[22:51:02,087] [ERROR] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
+[22:51:02,087] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登陆成功，userId=2 , userName = b
+[22:51:38,138] [INFO] UserLoginCmdHandler.handle --> username = b, password = 1
+[22:51:38,139] [INFO] LoginService.userLogin --> current thread = MainThreadProcessor
+[22:51:38,140] [INFO] LoginService$AsyncGetUserByName.doAsync --> current thread = AsyncOperationProcessor2
+[22:51:38,150] [ERROR] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
+[22:51:38,150] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登陆成功，userId=2 , userName = b
+[22:52:24,703] [INFO] UserLoginCmdHandler.handle --> username = b, password = 1
+[22:52:24,706] [INFO] LoginService.userLogin --> current thread = MainThreadProcessor
+[22:52:24,706] [INFO] LoginService$AsyncGetUserByName.doAsync --> current thread = AsyncOperationProcessor2
+[22:52:24,720] [ERROR] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
+[22:52:24,721] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登陆成功，userId=2 , userName = b

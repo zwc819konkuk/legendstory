@@ -1,5 +1,6 @@
 package org.tinygame.legendstory.login;
 
+import com.alibaba.fastjson.JSONObject;
 import org.apache.ibatis.session.SqlSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,6 +9,8 @@ import org.tinygame.legendstory.async.AsyncOperationProcessor;
 import org.tinygame.legendstory.async.IAsyncOperation;
 import org.tinygame.legendstory.login.db.IUserDao;
 import org.tinygame.legendstory.login.db.UserEntity;
+import org.tinygame.legendstory.util.RedisUtil;
+import redis.clients.jedis.Jedis;
 
 import java.util.function.Function;
 
@@ -61,6 +64,29 @@ public class LoginService {
         AsyncOperationProcessor.getInstance().process(asyncOp);
     }
 
+    /**
+     * 更新redis中的用户基本信息
+     * @param userEntity
+     */
+    private void updateUserBasicInfoInRedis(UserEntity userEntity) {
+        if (null == userEntity) {
+            return;
+        }
+        try (Jedis redis = RedisUtil.getRedis()) {
+            int userId = userEntity.userId;
+
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("userId",userId);
+            jsonObject.put("userName",userEntity.userName);
+            jsonObject.put("heroAvatar",userEntity.heroAvatar);
+
+            //更新redis数据
+            redis.hset("User_" + userId, "BasicInfo", jsonObject.toJSONString());
+        } catch (Exception e) {
+            LOGGER.error(e.getMessage(), e);
+        }
+    }
+
     private class AsyncGetUserByName implements IAsyncOperation {
         private final String _userName;
         private final String _password;
@@ -105,6 +131,8 @@ public class LoginService {
                     dao.insertInto(userEntity);
                 }
                 _userEntity = userEntity;
+
+                LoginService.getInstance().updateUserBasicInfoInRedis(userEntity);
             } catch (Exception ex) {
                 LOGGER.error(ex.getMessage(), ex);
             }

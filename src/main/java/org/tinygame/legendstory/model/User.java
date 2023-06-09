@@ -22,5 +22,8 @@ public class User {
      */
     public final MoveState moveState = new MoveState();
 
-
+    /**
+     * 是否已经死亡
+     */
+    public boolean died;
 }
