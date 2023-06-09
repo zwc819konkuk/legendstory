@@ -5,7 +5,6 @@ import io.netty.util.AttributeKey;
 import org.tinygame.legendstory.Broadcaster;
 import org.tinygame.legendstory.model.User;
 import org.tinygame.legendstory.model.UserManager;
-import org.tinygame.legendstory.msg.GameMsgProtocol;
 
 public class UserEntryCmdHandler implements ICmdHandler<GameMsgProtocol.UserEntryCmd>{
     @Override

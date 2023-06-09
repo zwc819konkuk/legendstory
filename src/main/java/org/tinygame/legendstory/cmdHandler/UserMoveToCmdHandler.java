@@ -6,7 +6,6 @@ import org.tinygame.legendstory.Broadcaster;
 import org.tinygame.legendstory.model.MoveState;
 import org.tinygame.legendstory.model.User;
 import org.tinygame.legendstory.model.UserManager;
-import org.tinygame.legendstory.msg.GameMsgProtocol;
 
 public class UserMoveToCmdHandler implements ICmdHandler<GameMsgProtocol.UserMoveToCmd>{
     @Override

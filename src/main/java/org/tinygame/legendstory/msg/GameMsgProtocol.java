@@ -91,6 +91,14 @@ public final class GameMsgProtocol {
      * <code>SELECT_HERO_RESULT = 16;</code>
      */
     SELECT_HERO_RESULT(16),
+    /**
+     * <code>GET_RANK_CMD = 17;</code>
+     */
+    GET_RANK_CMD(17),
+    /**
+     * <code>GET_RANK_RESULT = 18;</code>
+     */
+    GET_RANK_RESULT(18),
     UNRECOGNIZED(-1),
     ;
 
@@ -162,6 +170,14 @@ public final class GameMsgProtocol {
      * <code>SELECT_HERO_RESULT = 16;</code>
      */
     public static final int SELECT_HERO_RESULT_VALUE = 16;
+    /**
+     * <code>GET_RANK_CMD = 17;</code>
+     */
+    public static final int GET_RANK_CMD_VALUE = 17;
+    /**
+     * <code>GET_RANK_RESULT = 18;</code>
+     */
+    public static final int GET_RANK_RESULT_VALUE = 18;
 
 
     public final int getNumber() {
@@ -205,6 +221,8 @@ public final class GameMsgProtocol {
         case 14: return USER_LOGIN_RESULT;
         case 15: return SELECT_HERO_CMD;
         case 16: return SELECT_HERO_RESULT;
+        case 17: return GET_RANK_CMD;
+        case 18: return GET_RANK_RESULT;
         default: return null;
       }
     }
@@ -235,7 +253,7 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.getDescriptor().getEnumTypes().get(0);
+      return GameMsgProtocol.getDescriptor().getEnumTypes().get(0);
     }
 
     private static final MsgCode[] VALUES = values();
@@ -338,15 +356,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserEntryCmd_descriptor;
+      return GameMsgProtocol.internal_static_msg_UserEntryCmd_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserEntryCmd_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_UserEntryCmd_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd.Builder.class);
+              GameMsgProtocol.UserEntryCmd.class, GameMsgProtocol.UserEntryCmd.Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -382,10 +400,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd)) {
+      if (!(obj instanceof GameMsgProtocol.UserEntryCmd)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd other = (org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd) obj;
+      GameMsgProtocol.UserEntryCmd other = (GameMsgProtocol.UserEntryCmd) obj;
 
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -403,69 +421,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd parseFrom(
+    public static GameMsgProtocol.UserEntryCmd parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd parseFrom(
+    public static GameMsgProtocol.UserEntryCmd parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd parseFrom(
+    public static GameMsgProtocol.UserEntryCmd parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd parseFrom(
+    public static GameMsgProtocol.UserEntryCmd parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd parseFrom(byte[] data)
+    public static GameMsgProtocol.UserEntryCmd parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd parseFrom(
+    public static GameMsgProtocol.UserEntryCmd parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserEntryCmd parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd parseFrom(
+    public static GameMsgProtocol.UserEntryCmd parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserEntryCmd parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd parseDelimitedFrom(
+    public static GameMsgProtocol.UserEntryCmd parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd parseFrom(
+    public static GameMsgProtocol.UserEntryCmd parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd parseFrom(
+    public static GameMsgProtocol.UserEntryCmd parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -478,7 +496,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd prototype) {
+    public static Builder newBuilder(GameMsgProtocol.UserEntryCmd prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -506,18 +524,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.UserEntryCmd)
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmdOrBuilder {
+        GameMsgProtocol.UserEntryCmdOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserEntryCmd_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserEntryCmd_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserEntryCmd_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_UserEntryCmd_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd.Builder.class);
+                GameMsgProtocol.UserEntryCmd.class, GameMsgProtocol.UserEntryCmd.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd.newBuilder()
@@ -544,17 +562,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserEntryCmd_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserEntryCmd_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd.getDefaultInstance();
+      public GameMsgProtocol.UserEntryCmd getDefaultInstanceForType() {
+        return GameMsgProtocol.UserEntryCmd.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd result = buildPartial();
+      public GameMsgProtocol.UserEntryCmd build() {
+        GameMsgProtocol.UserEntryCmd result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -562,8 +580,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd result = new org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd(this);
+      public GameMsgProtocol.UserEntryCmd buildPartial() {
+        GameMsgProtocol.UserEntryCmd result = new GameMsgProtocol.UserEntryCmd(this);
         onBuilt();
         return result;
       }
@@ -602,16 +620,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd)other);
+        if (other instanceof GameMsgProtocol.UserEntryCmd) {
+          return mergeFrom((GameMsgProtocol.UserEntryCmd)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.UserEntryCmd other) {
+        if (other == GameMsgProtocol.UserEntryCmd.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -627,11 +645,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd parsedMessage = null;
+        GameMsgProtocol.UserEntryCmd parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.UserEntryCmd) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -657,12 +675,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.UserEntryCmd)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.UserEntryCmd DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd();
+      DEFAULT_INSTANCE = new GameMsgProtocol.UserEntryCmd();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd getDefaultInstance() {
+    public static GameMsgProtocol.UserEntryCmd getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -687,7 +705,7 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryCmd getDefaultInstanceForType() {
+    public GameMsgProtocol.UserEntryCmd getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -836,15 +854,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserEntryResult_descriptor;
+      return GameMsgProtocol.internal_static_msg_UserEntryResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserEntryResult_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_UserEntryResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult.Builder.class);
+              GameMsgProtocol.UserEntryResult.class, GameMsgProtocol.UserEntryResult.Builder.class);
     }
 
     public static final int USERID_FIELD_NUMBER = 1;
@@ -1006,10 +1024,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult)) {
+      if (!(obj instanceof GameMsgProtocol.UserEntryResult)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult other = (org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult) obj;
+      GameMsgProtocol.UserEntryResult other = (GameMsgProtocol.UserEntryResult) obj;
 
       if (getUserId()
           != other.getUserId()) return false;
@@ -1039,69 +1057,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult parseFrom(
+    public static GameMsgProtocol.UserEntryResult parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult parseFrom(
+    public static GameMsgProtocol.UserEntryResult parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult parseFrom(
+    public static GameMsgProtocol.UserEntryResult parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult parseFrom(
+    public static GameMsgProtocol.UserEntryResult parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult parseFrom(byte[] data)
+    public static GameMsgProtocol.UserEntryResult parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult parseFrom(
+    public static GameMsgProtocol.UserEntryResult parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserEntryResult parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult parseFrom(
+    public static GameMsgProtocol.UserEntryResult parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserEntryResult parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult parseDelimitedFrom(
+    public static GameMsgProtocol.UserEntryResult parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult parseFrom(
+    public static GameMsgProtocol.UserEntryResult parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult parseFrom(
+    public static GameMsgProtocol.UserEntryResult parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1114,7 +1132,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult prototype) {
+    public static Builder newBuilder(GameMsgProtocol.UserEntryResult prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1139,18 +1157,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.UserEntryResult)
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResultOrBuilder {
+        GameMsgProtocol.UserEntryResultOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserEntryResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserEntryResult_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserEntryResult_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_UserEntryResult_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult.Builder.class);
+                GameMsgProtocol.UserEntryResult.class, GameMsgProtocol.UserEntryResult.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult.newBuilder()
@@ -1183,17 +1201,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserEntryResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserEntryResult_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult.getDefaultInstance();
+      public GameMsgProtocol.UserEntryResult getDefaultInstanceForType() {
+        return GameMsgProtocol.UserEntryResult.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult result = buildPartial();
+      public GameMsgProtocol.UserEntryResult build() {
+        GameMsgProtocol.UserEntryResult result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1201,8 +1219,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult result = new org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult(this);
+      public GameMsgProtocol.UserEntryResult buildPartial() {
+        GameMsgProtocol.UserEntryResult result = new GameMsgProtocol.UserEntryResult(this);
         result.userId_ = userId_;
         result.userName_ = userName_;
         result.heroAvatar_ = heroAvatar_;
@@ -1244,16 +1262,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult)other);
+        if (other instanceof GameMsgProtocol.UserEntryResult) {
+          return mergeFrom((GameMsgProtocol.UserEntryResult)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.UserEntryResult other) {
+        if (other == GameMsgProtocol.UserEntryResult.getDefaultInstance()) return this;
         if (other.getUserId() != 0) {
           setUserId(other.getUserId());
         }
@@ -1280,11 +1298,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult parsedMessage = null;
+        GameMsgProtocol.UserEntryResult parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.UserEntryResult) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1545,12 +1563,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.UserEntryResult)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.UserEntryResult DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult();
+      DEFAULT_INSTANCE = new GameMsgProtocol.UserEntryResult();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult getDefaultInstance() {
+    public static GameMsgProtocol.UserEntryResult getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1575,7 +1593,7 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.UserEntryResult getDefaultInstanceForType() {
+    public GameMsgProtocol.UserEntryResult getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1657,15 +1675,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereCmd_descriptor;
+      return GameMsgProtocol.internal_static_msg_WhoElseIsHereCmd_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereCmd_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_WhoElseIsHereCmd_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd.class, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd.Builder.class);
+              GameMsgProtocol.WhoElseIsHereCmd.class, GameMsgProtocol.WhoElseIsHereCmd.Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1701,10 +1719,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd)) {
+      if (!(obj instanceof GameMsgProtocol.WhoElseIsHereCmd)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd other = (org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd) obj;
+      GameMsgProtocol.WhoElseIsHereCmd other = (GameMsgProtocol.WhoElseIsHereCmd) obj;
 
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -1722,69 +1740,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd parseFrom(
+    public static GameMsgProtocol.WhoElseIsHereCmd parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd parseFrom(
+    public static GameMsgProtocol.WhoElseIsHereCmd parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd parseFrom(
+    public static GameMsgProtocol.WhoElseIsHereCmd parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd parseFrom(
+    public static GameMsgProtocol.WhoElseIsHereCmd parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd parseFrom(byte[] data)
+    public static GameMsgProtocol.WhoElseIsHereCmd parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd parseFrom(
+    public static GameMsgProtocol.WhoElseIsHereCmd parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.WhoElseIsHereCmd parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd parseFrom(
+    public static GameMsgProtocol.WhoElseIsHereCmd parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.WhoElseIsHereCmd parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd parseDelimitedFrom(
+    public static GameMsgProtocol.WhoElseIsHereCmd parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd parseFrom(
+    public static GameMsgProtocol.WhoElseIsHereCmd parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd parseFrom(
+    public static GameMsgProtocol.WhoElseIsHereCmd parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1797,7 +1815,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd prototype) {
+    public static Builder newBuilder(GameMsgProtocol.WhoElseIsHereCmd prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1824,18 +1842,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.WhoElseIsHereCmd)
-        org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmdOrBuilder {
+        GameMsgProtocol.WhoElseIsHereCmdOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereCmd_descriptor;
+        return GameMsgProtocol.internal_static_msg_WhoElseIsHereCmd_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereCmd_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_WhoElseIsHereCmd_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd.class, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd.Builder.class);
+                GameMsgProtocol.WhoElseIsHereCmd.class, GameMsgProtocol.WhoElseIsHereCmd.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd.newBuilder()
@@ -1862,17 +1880,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereCmd_descriptor;
+        return GameMsgProtocol.internal_static_msg_WhoElseIsHereCmd_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd.getDefaultInstance();
+      public GameMsgProtocol.WhoElseIsHereCmd getDefaultInstanceForType() {
+        return GameMsgProtocol.WhoElseIsHereCmd.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd result = buildPartial();
+      public GameMsgProtocol.WhoElseIsHereCmd build() {
+        GameMsgProtocol.WhoElseIsHereCmd result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1880,8 +1898,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd result = new org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd(this);
+      public GameMsgProtocol.WhoElseIsHereCmd buildPartial() {
+        GameMsgProtocol.WhoElseIsHereCmd result = new GameMsgProtocol.WhoElseIsHereCmd(this);
         onBuilt();
         return result;
       }
@@ -1920,16 +1938,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd)other);
+        if (other instanceof GameMsgProtocol.WhoElseIsHereCmd) {
+          return mergeFrom((GameMsgProtocol.WhoElseIsHereCmd)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.WhoElseIsHereCmd other) {
+        if (other == GameMsgProtocol.WhoElseIsHereCmd.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -1945,11 +1963,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd parsedMessage = null;
+        GameMsgProtocol.WhoElseIsHereCmd parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.WhoElseIsHereCmd) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1975,12 +1993,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.WhoElseIsHereCmd)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.WhoElseIsHereCmd DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd();
+      DEFAULT_INSTANCE = new GameMsgProtocol.WhoElseIsHereCmd();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd getDefaultInstance() {
+    public static GameMsgProtocol.WhoElseIsHereCmd getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2005,7 +2023,7 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereCmd getDefaultInstanceForType() {
+    public GameMsgProtocol.WhoElseIsHereCmd getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2022,7 +2040,7 @@ public final class GameMsgProtocol {
      *
      * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
      */
-    java.util.List<org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo> 
+    java.util.List<GameMsgProtocol.WhoElseIsHereResult.UserInfo>
         getUserInfoList();
     /**
      * <pre>
@@ -2031,7 +2049,7 @@ public final class GameMsgProtocol {
      *
      * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
      */
-    org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo getUserInfo(int index);
+    GameMsgProtocol.WhoElseIsHereResult.UserInfo getUserInfo(int index);
     /**
      * <pre>
      * 用户信息数组
@@ -2047,7 +2065,7 @@ public final class GameMsgProtocol {
      *
      * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
      */
-    java.util.List<? extends org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder> 
+    java.util.List<? extends GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder>
         getUserInfoOrBuilderList();
     /**
      * <pre>
@@ -2056,7 +2074,7 @@ public final class GameMsgProtocol {
      *
      * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
      */
-    org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder getUserInfoOrBuilder(
+    GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder getUserInfoOrBuilder(
         int index);
   }
   /**
@@ -2112,11 +2130,11 @@ public final class GameMsgProtocol {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                userInfo_ = new java.util.ArrayList<org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo>();
+                userInfo_ = new java.util.ArrayList<GameMsgProtocol.WhoElseIsHereResult.UserInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               userInfo_.add(
-                  input.readMessage(org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.parser(), extensionRegistry));
+                  input.readMessage(GameMsgProtocol.WhoElseIsHereResult.UserInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -2143,15 +2161,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_descriptor;
+      return GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.Builder.class);
+              GameMsgProtocol.WhoElseIsHereResult.class, GameMsgProtocol.WhoElseIsHereResult.Builder.class);
     }
 
     public interface UserInfoOrBuilder extends
@@ -2225,7 +2243,7 @@ public final class GameMsgProtocol {
        * <code>.msg.WhoElseIsHereResult.UserInfo.MoveState moveState = 4;</code>
        * @return The moveState.
        */
-      org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState getMoveState();
+      GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState getMoveState();
       /**
        * <pre>
        * 移动状态
@@ -2233,7 +2251,7 @@ public final class GameMsgProtocol {
        *
        * <code>.msg.WhoElseIsHereResult.UserInfo.MoveState moveState = 4;</code>
        */
-      org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveStateOrBuilder getMoveStateOrBuilder();
+      GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveStateOrBuilder getMoveStateOrBuilder();
     }
     /**
      * <pre>
@@ -2304,11 +2322,11 @@ public final class GameMsgProtocol {
                 break;
               }
               case 34: {
-                org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.Builder subBuilder = null;
+                GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.Builder subBuilder = null;
                 if (moveState_ != null) {
                   subBuilder = moveState_.toBuilder();
                 }
-                moveState_ = input.readMessage(org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.parser(), extensionRegistry);
+                moveState_ = input.readMessage(GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.parser(), extensionRegistry);
                 if (subBuilder != null) {
                   subBuilder.mergeFrom(moveState_);
                   moveState_ = subBuilder.buildPartial();
@@ -2337,15 +2355,15 @@ public final class GameMsgProtocol {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_descriptor;
+        return GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.class, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder.class);
+                GameMsgProtocol.WhoElseIsHereResult.UserInfo.class, GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder.class);
       }
 
       public interface MoveStateOrBuilder extends
@@ -2497,15 +2515,15 @@ public final class GameMsgProtocol {
         }
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_MoveState_descriptor;
+          return GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_MoveState_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_MoveState_fieldAccessorTable
+          return GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_MoveState_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.class, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.Builder.class);
+                  GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.class, GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.Builder.class);
         }
 
         public static final int FROMPOSX_FIELD_NUMBER = 1;
@@ -2651,10 +2669,10 @@ public final class GameMsgProtocol {
           if (obj == this) {
            return true;
           }
-          if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState)) {
+          if (!(obj instanceof GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState)) {
             return super.equals(obj);
           }
-          org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState other = (org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState) obj;
+          GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState other = (GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState) obj;
 
           if (java.lang.Float.floatToIntBits(getFromPosX())
               != java.lang.Float.floatToIntBits(
@@ -2701,69 +2719,69 @@ public final class GameMsgProtocol {
           return hash;
         }
 
-        public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(
+        public static GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(
             java.nio.ByteBuffer data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(
+        public static GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(
             java.nio.ByteBuffer data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(
+        public static GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(
             com.google.protobuf.ByteString data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(
+        public static GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(
             com.google.protobuf.ByteString data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(byte[] data)
+        public static GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(byte[] data)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data);
         }
-        public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(
+        public static GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(
             byte[] data,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws com.google.protobuf.InvalidProtocolBufferException {
           return PARSER.parseFrom(data, extensionRegistry);
         }
-        public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(java.io.InputStream input)
+        public static GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(
+        public static GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input, extensionRegistry);
         }
-        public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseDelimitedFrom(java.io.InputStream input)
+        public static GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseDelimitedFrom(java.io.InputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input);
         }
-        public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseDelimitedFrom(
+        public static GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseDelimitedFrom(
             java.io.InputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
         }
-        public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(
+        public static GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(
             com.google.protobuf.CodedInputStream input)
             throws java.io.IOException {
           return com.google.protobuf.GeneratedMessageV3
               .parseWithIOException(PARSER, input);
         }
-        public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(
+        public static GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parseFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
@@ -2776,7 +2794,7 @@ public final class GameMsgProtocol {
         public static Builder newBuilder() {
           return DEFAULT_INSTANCE.toBuilder();
         }
-        public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState prototype) {
+        public static Builder newBuilder(GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState prototype) {
           return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
         }
         @java.lang.Override
@@ -2801,18 +2819,18 @@ public final class GameMsgProtocol {
         public static final class Builder extends
             com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
             // @@protoc_insertion_point(builder_implements:msg.WhoElseIsHereResult.UserInfo.MoveState)
-            org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveStateOrBuilder {
+            GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveStateOrBuilder {
           public static final com.google.protobuf.Descriptors.Descriptor
               getDescriptor() {
-            return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_MoveState_descriptor;
+            return GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_MoveState_descriptor;
           }
 
           @java.lang.Override
           protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
               internalGetFieldAccessorTable() {
-            return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_MoveState_fieldAccessorTable
+            return GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_MoveState_fieldAccessorTable
                 .ensureFieldAccessorsInitialized(
-                    org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.class, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.Builder.class);
+                    GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.class, GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.Builder.class);
           }
 
           // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.newBuilder()
@@ -2849,17 +2867,17 @@ public final class GameMsgProtocol {
           @java.lang.Override
           public com.google.protobuf.Descriptors.Descriptor
               getDescriptorForType() {
-            return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_MoveState_descriptor;
+            return GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_MoveState_descriptor;
           }
 
           @java.lang.Override
-          public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState getDefaultInstanceForType() {
-            return org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.getDefaultInstance();
+          public GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState getDefaultInstanceForType() {
+            return GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.getDefaultInstance();
           }
 
           @java.lang.Override
-          public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState build() {
-            org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState result = buildPartial();
+          public GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState build() {
+            GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState result = buildPartial();
             if (!result.isInitialized()) {
               throw newUninitializedMessageException(result);
             }
@@ -2867,8 +2885,8 @@ public final class GameMsgProtocol {
           }
 
           @java.lang.Override
-          public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState buildPartial() {
-            org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState result = new org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState(this);
+          public GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState buildPartial() {
+            GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState result = new GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState(this);
             result.fromPosX_ = fromPosX_;
             result.fromPosY_ = fromPosY_;
             result.toPosX_ = toPosX_;
@@ -2912,16 +2930,16 @@ public final class GameMsgProtocol {
           }
           @java.lang.Override
           public Builder mergeFrom(com.google.protobuf.Message other) {
-            if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState) {
-              return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState)other);
+            if (other instanceof GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState) {
+              return mergeFrom((GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState)other);
             } else {
               super.mergeFrom(other);
               return this;
             }
           }
 
-          public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState other) {
-            if (other == org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.getDefaultInstance()) return this;
+          public Builder mergeFrom(GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState other) {
+            if (other == GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.getDefaultInstance()) return this;
             if (other.getFromPosX() != 0F) {
               setFromPosX(other.getFromPosX());
             }
@@ -2952,11 +2970,11 @@ public final class GameMsgProtocol {
               com.google.protobuf.CodedInputStream input,
               com.google.protobuf.ExtensionRegistryLite extensionRegistry)
               throws java.io.IOException {
-            org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parsedMessage = null;
+            GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState parsedMessage = null;
             try {
               parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
             } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-              parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState) e.getUnfinishedMessage();
+              parsedMessage = (GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState) e.getUnfinishedMessage();
               throw e.unwrapIOException();
             } finally {
               if (parsedMessage != null) {
@@ -3197,12 +3215,12 @@ public final class GameMsgProtocol {
         }
 
         // @@protoc_insertion_point(class_scope:msg.WhoElseIsHereResult.UserInfo.MoveState)
-        private static final org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState DEFAULT_INSTANCE;
+        private static final GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState DEFAULT_INSTANCE;
         static {
-          DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState();
+          DEFAULT_INSTANCE = new GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState();
         }
 
-        public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState getDefaultInstance() {
+        public static GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState getDefaultInstance() {
           return DEFAULT_INSTANCE;
         }
 
@@ -3227,7 +3245,7 @@ public final class GameMsgProtocol {
         }
 
         @java.lang.Override
-        public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState getDefaultInstanceForType() {
+        public GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState getDefaultInstanceForType() {
           return DEFAULT_INSTANCE;
         }
 
@@ -3341,7 +3359,7 @@ public final class GameMsgProtocol {
       }
 
       public static final int MOVESTATE_FIELD_NUMBER = 4;
-      private org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState moveState_;
+      private GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState moveState_;
       /**
        * <pre>
        * 移动状态
@@ -3363,8 +3381,8 @@ public final class GameMsgProtocol {
        * @return The moveState.
        */
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState getMoveState() {
-        return moveState_ == null ? org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.getDefaultInstance() : moveState_;
+      public GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState getMoveState() {
+        return moveState_ == null ? GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.getDefaultInstance() : moveState_;
       }
       /**
        * <pre>
@@ -3374,7 +3392,7 @@ public final class GameMsgProtocol {
        * <code>.msg.WhoElseIsHereResult.UserInfo.MoveState moveState = 4;</code>
        */
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveStateOrBuilder getMoveStateOrBuilder() {
+      public GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveStateOrBuilder getMoveStateOrBuilder() {
         return getMoveState();
       }
 
@@ -3437,10 +3455,10 @@ public final class GameMsgProtocol {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo)) {
+        if (!(obj instanceof GameMsgProtocol.WhoElseIsHereResult.UserInfo)) {
           return super.equals(obj);
         }
-        org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo other = (org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo) obj;
+        GameMsgProtocol.WhoElseIsHereResult.UserInfo other = (GameMsgProtocol.WhoElseIsHereResult.UserInfo) obj;
 
         if (getUserId()
             != other.getUserId()) return false;
@@ -3479,69 +3497,69 @@ public final class GameMsgProtocol {
         return hash;
       }
 
-      public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(
+      public static GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(
+      public static GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(
+      public static GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(
+      public static GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(byte[] data)
+      public static GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(
+      public static GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(java.io.InputStream input)
+      public static GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(
+      public static GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo parseDelimitedFrom(java.io.InputStream input)
+      public static GameMsgProtocol.WhoElseIsHereResult.UserInfo parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo parseDelimitedFrom(
+      public static GameMsgProtocol.WhoElseIsHereResult.UserInfo parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(
+      public static GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(
+      public static GameMsgProtocol.WhoElseIsHereResult.UserInfo parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -3554,7 +3572,7 @@ public final class GameMsgProtocol {
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo prototype) {
+      public static Builder newBuilder(GameMsgProtocol.WhoElseIsHereResult.UserInfo prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       @java.lang.Override
@@ -3579,18 +3597,18 @@ public final class GameMsgProtocol {
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:msg.WhoElseIsHereResult.UserInfo)
-          org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder {
+          GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_descriptor;
+          return GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_fieldAccessorTable
+          return GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.class, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder.class);
+                  GameMsgProtocol.WhoElseIsHereResult.UserInfo.class, GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder.class);
         }
 
         // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.newBuilder()
@@ -3629,17 +3647,17 @@ public final class GameMsgProtocol {
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_descriptor;
+          return GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_UserInfo_descriptor;
         }
 
         @java.lang.Override
-        public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo getDefaultInstanceForType() {
-          return org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.getDefaultInstance();
+        public GameMsgProtocol.WhoElseIsHereResult.UserInfo getDefaultInstanceForType() {
+          return GameMsgProtocol.WhoElseIsHereResult.UserInfo.getDefaultInstance();
         }
 
         @java.lang.Override
-        public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo build() {
-          org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo result = buildPartial();
+        public GameMsgProtocol.WhoElseIsHereResult.UserInfo build() {
+          GameMsgProtocol.WhoElseIsHereResult.UserInfo result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
@@ -3647,8 +3665,8 @@ public final class GameMsgProtocol {
         }
 
         @java.lang.Override
-        public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo buildPartial() {
-          org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo result = new org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo(this);
+        public GameMsgProtocol.WhoElseIsHereResult.UserInfo buildPartial() {
+          GameMsgProtocol.WhoElseIsHereResult.UserInfo result = new GameMsgProtocol.WhoElseIsHereResult.UserInfo(this);
           result.userId_ = userId_;
           result.userName_ = userName_;
           result.heroAvatar_ = heroAvatar_;
@@ -3695,16 +3713,16 @@ public final class GameMsgProtocol {
         }
         @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo) {
-            return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo)other);
+          if (other instanceof GameMsgProtocol.WhoElseIsHereResult.UserInfo) {
+            return mergeFrom((GameMsgProtocol.WhoElseIsHereResult.UserInfo)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo other) {
-          if (other == org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.getDefaultInstance()) return this;
+        public Builder mergeFrom(GameMsgProtocol.WhoElseIsHereResult.UserInfo other) {
+          if (other == GameMsgProtocol.WhoElseIsHereResult.UserInfo.getDefaultInstance()) return this;
           if (other.getUserId() != 0) {
             setUserId(other.getUserId());
           }
@@ -3734,11 +3752,11 @@ public final class GameMsgProtocol {
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo parsedMessage = null;
+          GameMsgProtocol.WhoElseIsHereResult.UserInfo parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo) e.getUnfinishedMessage();
+            parsedMessage = (GameMsgProtocol.WhoElseIsHereResult.UserInfo) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -3983,9 +4001,9 @@ public final class GameMsgProtocol {
           return this;
         }
 
-        private org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState moveState_;
+        private GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState moveState_;
         private com.google.protobuf.SingleFieldBuilderV3<
-            org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.Builder, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveStateOrBuilder> moveStateBuilder_;
+            GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState, GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.Builder, GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveStateOrBuilder> moveStateBuilder_;
         /**
          * <pre>
          * 移动状态
@@ -4005,9 +4023,9 @@ public final class GameMsgProtocol {
          * <code>.msg.WhoElseIsHereResult.UserInfo.MoveState moveState = 4;</code>
          * @return The moveState.
          */
-        public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState getMoveState() {
+        public GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState getMoveState() {
           if (moveStateBuilder_ == null) {
-            return moveState_ == null ? org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.getDefaultInstance() : moveState_;
+            return moveState_ == null ? GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.getDefaultInstance() : moveState_;
           } else {
             return moveStateBuilder_.getMessage();
           }
@@ -4019,7 +4037,7 @@ public final class GameMsgProtocol {
          *
          * <code>.msg.WhoElseIsHereResult.UserInfo.MoveState moveState = 4;</code>
          */
-        public Builder setMoveState(org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState value) {
+        public Builder setMoveState(GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState value) {
           if (moveStateBuilder_ == null) {
             if (value == null) {
               throw new NullPointerException();
@@ -4040,7 +4058,7 @@ public final class GameMsgProtocol {
          * <code>.msg.WhoElseIsHereResult.UserInfo.MoveState moveState = 4;</code>
          */
         public Builder setMoveState(
-            org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.Builder builderForValue) {
+            GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.Builder builderForValue) {
           if (moveStateBuilder_ == null) {
             moveState_ = builderForValue.build();
             onChanged();
@@ -4057,11 +4075,11 @@ public final class GameMsgProtocol {
          *
          * <code>.msg.WhoElseIsHereResult.UserInfo.MoveState moveState = 4;</code>
          */
-        public Builder mergeMoveState(org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState value) {
+        public Builder mergeMoveState(GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState value) {
           if (moveStateBuilder_ == null) {
             if (moveState_ != null) {
               moveState_ =
-                org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.newBuilder(moveState_).mergeFrom(value).buildPartial();
+                GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.newBuilder(moveState_).mergeFrom(value).buildPartial();
             } else {
               moveState_ = value;
             }
@@ -4097,7 +4115,7 @@ public final class GameMsgProtocol {
          *
          * <code>.msg.WhoElseIsHereResult.UserInfo.MoveState moveState = 4;</code>
          */
-        public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.Builder getMoveStateBuilder() {
+        public GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.Builder getMoveStateBuilder() {
           
           onChanged();
           return getMoveStateFieldBuilder().getBuilder();
@@ -4109,12 +4127,12 @@ public final class GameMsgProtocol {
          *
          * <code>.msg.WhoElseIsHereResult.UserInfo.MoveState moveState = 4;</code>
          */
-        public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveStateOrBuilder getMoveStateOrBuilder() {
+        public GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveStateOrBuilder getMoveStateOrBuilder() {
           if (moveStateBuilder_ != null) {
             return moveStateBuilder_.getMessageOrBuilder();
           } else {
             return moveState_ == null ?
-                org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.getDefaultInstance() : moveState_;
+                GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.getDefaultInstance() : moveState_;
           }
         }
         /**
@@ -4125,11 +4143,11 @@ public final class GameMsgProtocol {
          * <code>.msg.WhoElseIsHereResult.UserInfo.MoveState moveState = 4;</code>
          */
         private com.google.protobuf.SingleFieldBuilderV3<
-            org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.Builder, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveStateOrBuilder> 
+            GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState, GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.Builder, GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveStateOrBuilder>
             getMoveStateFieldBuilder() {
           if (moveStateBuilder_ == null) {
             moveStateBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-                org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.Builder, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveStateOrBuilder>(
+                GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState, GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveState.Builder, GameMsgProtocol.WhoElseIsHereResult.UserInfo.MoveStateOrBuilder>(
                     getMoveState(),
                     getParentForChildren(),
                     isClean());
@@ -4154,12 +4172,12 @@ public final class GameMsgProtocol {
       }
 
       // @@protoc_insertion_point(class_scope:msg.WhoElseIsHereResult.UserInfo)
-      private static final org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo DEFAULT_INSTANCE;
+      private static final GameMsgProtocol.WhoElseIsHereResult.UserInfo DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo();
+        DEFAULT_INSTANCE = new GameMsgProtocol.WhoElseIsHereResult.UserInfo();
       }
 
-      public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo getDefaultInstance() {
+      public static GameMsgProtocol.WhoElseIsHereResult.UserInfo getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -4184,14 +4202,14 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo getDefaultInstanceForType() {
+      public GameMsgProtocol.WhoElseIsHereResult.UserInfo getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
     }
 
     public static final int USERINFO_FIELD_NUMBER = 1;
-    private java.util.List<org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo> userInfo_;
+    private java.util.List<GameMsgProtocol.WhoElseIsHereResult.UserInfo> userInfo_;
     /**
      * <pre>
      * 用户信息数组
@@ -4200,7 +4218,7 @@ public final class GameMsgProtocol {
      * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo> getUserInfoList() {
+    public java.util.List<GameMsgProtocol.WhoElseIsHereResult.UserInfo> getUserInfoList() {
       return userInfo_;
     }
     /**
@@ -4211,7 +4229,7 @@ public final class GameMsgProtocol {
      * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder> 
+    public java.util.List<? extends GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder>
         getUserInfoOrBuilderList() {
       return userInfo_;
     }
@@ -4234,7 +4252,7 @@ public final class GameMsgProtocol {
      * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
      */
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo getUserInfo(int index) {
+    public GameMsgProtocol.WhoElseIsHereResult.UserInfo getUserInfo(int index) {
       return userInfo_.get(index);
     }
     /**
@@ -4245,7 +4263,7 @@ public final class GameMsgProtocol {
      * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
      */
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder getUserInfoOrBuilder(
+    public GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder getUserInfoOrBuilder(
         int index) {
       return userInfo_.get(index);
     }
@@ -4290,10 +4308,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult)) {
+      if (!(obj instanceof GameMsgProtocol.WhoElseIsHereResult)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult other = (org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult) obj;
+      GameMsgProtocol.WhoElseIsHereResult other = (GameMsgProtocol.WhoElseIsHereResult) obj;
 
       if (!getUserInfoList()
           .equals(other.getUserInfoList())) return false;
@@ -4317,69 +4335,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult parseFrom(
+    public static GameMsgProtocol.WhoElseIsHereResult parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult parseFrom(
+    public static GameMsgProtocol.WhoElseIsHereResult parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult parseFrom(
+    public static GameMsgProtocol.WhoElseIsHereResult parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult parseFrom(
+    public static GameMsgProtocol.WhoElseIsHereResult parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult parseFrom(byte[] data)
+    public static GameMsgProtocol.WhoElseIsHereResult parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult parseFrom(
+    public static GameMsgProtocol.WhoElseIsHereResult parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.WhoElseIsHereResult parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult parseFrom(
+    public static GameMsgProtocol.WhoElseIsHereResult parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.WhoElseIsHereResult parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult parseDelimitedFrom(
+    public static GameMsgProtocol.WhoElseIsHereResult parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult parseFrom(
+    public static GameMsgProtocol.WhoElseIsHereResult parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult parseFrom(
+    public static GameMsgProtocol.WhoElseIsHereResult parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4392,7 +4410,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult prototype) {
+    public static Builder newBuilder(GameMsgProtocol.WhoElseIsHereResult prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -4417,18 +4435,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.WhoElseIsHereResult)
-        org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResultOrBuilder {
+        GameMsgProtocol.WhoElseIsHereResultOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.Builder.class);
+                GameMsgProtocol.WhoElseIsHereResult.class, GameMsgProtocol.WhoElseIsHereResult.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.newBuilder()
@@ -4462,17 +4480,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_WhoElseIsHereResult_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.getDefaultInstance();
+      public GameMsgProtocol.WhoElseIsHereResult getDefaultInstanceForType() {
+        return GameMsgProtocol.WhoElseIsHereResult.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult result = buildPartial();
+      public GameMsgProtocol.WhoElseIsHereResult build() {
+        GameMsgProtocol.WhoElseIsHereResult result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -4480,8 +4498,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult result = new org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult(this);
+      public GameMsgProtocol.WhoElseIsHereResult buildPartial() {
+        GameMsgProtocol.WhoElseIsHereResult result = new GameMsgProtocol.WhoElseIsHereResult(this);
         int from_bitField0_ = bitField0_;
         if (userInfoBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
@@ -4530,16 +4548,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult)other);
+        if (other instanceof GameMsgProtocol.WhoElseIsHereResult) {
+          return mergeFrom((GameMsgProtocol.WhoElseIsHereResult)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.WhoElseIsHereResult other) {
+        if (other == GameMsgProtocol.WhoElseIsHereResult.getDefaultInstance()) return this;
         if (userInfoBuilder_ == null) {
           if (!other.userInfo_.isEmpty()) {
             if (userInfo_.isEmpty()) {
@@ -4581,11 +4599,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult parsedMessage = null;
+        GameMsgProtocol.WhoElseIsHereResult parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.WhoElseIsHereResult) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -4596,17 +4614,17 @@ public final class GameMsgProtocol {
       }
       private int bitField0_;
 
-      private java.util.List<org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo> userInfo_ =
+      private java.util.List<GameMsgProtocol.WhoElseIsHereResult.UserInfo> userInfo_ =
         java.util.Collections.emptyList();
       private void ensureUserInfoIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          userInfo_ = new java.util.ArrayList<org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo>(userInfo_);
+          userInfo_ = new java.util.ArrayList<GameMsgProtocol.WhoElseIsHereResult.UserInfo>(userInfo_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder> userInfoBuilder_;
+          GameMsgProtocol.WhoElseIsHereResult.UserInfo, GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder, GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder> userInfoBuilder_;
 
       /**
        * <pre>
@@ -4615,7 +4633,7 @@ public final class GameMsgProtocol {
        *
        * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
        */
-      public java.util.List<org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo> getUserInfoList() {
+      public java.util.List<GameMsgProtocol.WhoElseIsHereResult.UserInfo> getUserInfoList() {
         if (userInfoBuilder_ == null) {
           return java.util.Collections.unmodifiableList(userInfo_);
         } else {
@@ -4643,7 +4661,7 @@ public final class GameMsgProtocol {
        *
        * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
        */
-      public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo getUserInfo(int index) {
+      public GameMsgProtocol.WhoElseIsHereResult.UserInfo getUserInfo(int index) {
         if (userInfoBuilder_ == null) {
           return userInfo_.get(index);
         } else {
@@ -4658,7 +4676,7 @@ public final class GameMsgProtocol {
        * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
        */
       public Builder setUserInfo(
-          int index, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo value) {
+          int index, GameMsgProtocol.WhoElseIsHereResult.UserInfo value) {
         if (userInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4679,7 +4697,7 @@ public final class GameMsgProtocol {
        * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
        */
       public Builder setUserInfo(
-          int index, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder builderForValue) {
+          int index, GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder builderForValue) {
         if (userInfoBuilder_ == null) {
           ensureUserInfoIsMutable();
           userInfo_.set(index, builderForValue.build());
@@ -4696,7 +4714,7 @@ public final class GameMsgProtocol {
        *
        * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
        */
-      public Builder addUserInfo(org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo value) {
+      public Builder addUserInfo(GameMsgProtocol.WhoElseIsHereResult.UserInfo value) {
         if (userInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4717,7 +4735,7 @@ public final class GameMsgProtocol {
        * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
        */
       public Builder addUserInfo(
-          int index, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo value) {
+          int index, GameMsgProtocol.WhoElseIsHereResult.UserInfo value) {
         if (userInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4738,7 +4756,7 @@ public final class GameMsgProtocol {
        * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
        */
       public Builder addUserInfo(
-          org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder builderForValue) {
+          GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder builderForValue) {
         if (userInfoBuilder_ == null) {
           ensureUserInfoIsMutable();
           userInfo_.add(builderForValue.build());
@@ -4756,7 +4774,7 @@ public final class GameMsgProtocol {
        * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
        */
       public Builder addUserInfo(
-          int index, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder builderForValue) {
+          int index, GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder builderForValue) {
         if (userInfoBuilder_ == null) {
           ensureUserInfoIsMutable();
           userInfo_.add(index, builderForValue.build());
@@ -4774,7 +4792,7 @@ public final class GameMsgProtocol {
        * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
        */
       public Builder addAllUserInfo(
-          java.lang.Iterable<? extends org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo> values) {
+          java.lang.Iterable<? extends GameMsgProtocol.WhoElseIsHereResult.UserInfo> values) {
         if (userInfoBuilder_ == null) {
           ensureUserInfoIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -4826,7 +4844,7 @@ public final class GameMsgProtocol {
        *
        * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
        */
-      public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder getUserInfoBuilder(
+      public GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder getUserInfoBuilder(
           int index) {
         return getUserInfoFieldBuilder().getBuilder(index);
       }
@@ -4837,7 +4855,7 @@ public final class GameMsgProtocol {
        *
        * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
        */
-      public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder getUserInfoOrBuilder(
+      public GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder getUserInfoOrBuilder(
           int index) {
         if (userInfoBuilder_ == null) {
           return userInfo_.get(index);  } else {
@@ -4851,7 +4869,7 @@ public final class GameMsgProtocol {
        *
        * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
        */
-      public java.util.List<? extends org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder> 
+      public java.util.List<? extends GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder>
            getUserInfoOrBuilderList() {
         if (userInfoBuilder_ != null) {
           return userInfoBuilder_.getMessageOrBuilderList();
@@ -4866,9 +4884,9 @@ public final class GameMsgProtocol {
        *
        * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
        */
-      public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder addUserInfoBuilder() {
+      public GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder addUserInfoBuilder() {
         return getUserInfoFieldBuilder().addBuilder(
-            org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.getDefaultInstance());
+            GameMsgProtocol.WhoElseIsHereResult.UserInfo.getDefaultInstance());
       }
       /**
        * <pre>
@@ -4877,10 +4895,10 @@ public final class GameMsgProtocol {
        *
        * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
        */
-      public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder addUserInfoBuilder(
+      public GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder addUserInfoBuilder(
           int index) {
         return getUserInfoFieldBuilder().addBuilder(
-            index, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.getDefaultInstance());
+            index, GameMsgProtocol.WhoElseIsHereResult.UserInfo.getDefaultInstance());
       }
       /**
        * <pre>
@@ -4889,16 +4907,16 @@ public final class GameMsgProtocol {
        *
        * <code>repeated .msg.WhoElseIsHereResult.UserInfo userInfo = 1;</code>
        */
-      public java.util.List<org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder> 
+      public java.util.List<GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder>
            getUserInfoBuilderList() {
         return getUserInfoFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder> 
+          GameMsgProtocol.WhoElseIsHereResult.UserInfo, GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder, GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder>
           getUserInfoFieldBuilder() {
         if (userInfoBuilder_ == null) {
           userInfoBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder, org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder>(
+              GameMsgProtocol.WhoElseIsHereResult.UserInfo, GameMsgProtocol.WhoElseIsHereResult.UserInfo.Builder, GameMsgProtocol.WhoElseIsHereResult.UserInfoOrBuilder>(
                   userInfo_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -4924,12 +4942,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.WhoElseIsHereResult)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.WhoElseIsHereResult DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult();
+      DEFAULT_INSTANCE = new GameMsgProtocol.WhoElseIsHereResult();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult getDefaultInstance() {
+    public static GameMsgProtocol.WhoElseIsHereResult getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4954,7 +4972,7 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.WhoElseIsHereResult getDefaultInstanceForType() {
+    public GameMsgProtocol.WhoElseIsHereResult getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5101,15 +5119,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserMoveToCmd_descriptor;
+      return GameMsgProtocol.internal_static_msg_UserMoveToCmd_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserMoveToCmd_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_UserMoveToCmd_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd.Builder.class);
+              GameMsgProtocol.UserMoveToCmd.class, GameMsgProtocol.UserMoveToCmd.Builder.class);
     }
 
     public static final int MOVEFROMPOSX_FIELD_NUMBER = 1;
@@ -5237,10 +5255,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd)) {
+      if (!(obj instanceof GameMsgProtocol.UserMoveToCmd)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd other = (org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd) obj;
+      GameMsgProtocol.UserMoveToCmd other = (GameMsgProtocol.UserMoveToCmd) obj;
 
       if (java.lang.Float.floatToIntBits(getMoveFromPosX())
           != java.lang.Float.floatToIntBits(
@@ -5282,69 +5300,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd parseFrom(
+    public static GameMsgProtocol.UserMoveToCmd parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd parseFrom(
+    public static GameMsgProtocol.UserMoveToCmd parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd parseFrom(
+    public static GameMsgProtocol.UserMoveToCmd parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd parseFrom(
+    public static GameMsgProtocol.UserMoveToCmd parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd parseFrom(byte[] data)
+    public static GameMsgProtocol.UserMoveToCmd parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd parseFrom(
+    public static GameMsgProtocol.UserMoveToCmd parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserMoveToCmd parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd parseFrom(
+    public static GameMsgProtocol.UserMoveToCmd parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserMoveToCmd parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd parseDelimitedFrom(
+    public static GameMsgProtocol.UserMoveToCmd parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd parseFrom(
+    public static GameMsgProtocol.UserMoveToCmd parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd parseFrom(
+    public static GameMsgProtocol.UserMoveToCmd parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5357,7 +5375,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd prototype) {
+    public static Builder newBuilder(GameMsgProtocol.UserMoveToCmd prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -5385,18 +5403,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.UserMoveToCmd)
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmdOrBuilder {
+        GameMsgProtocol.UserMoveToCmdOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserMoveToCmd_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserMoveToCmd_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserMoveToCmd_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_UserMoveToCmd_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd.Builder.class);
+                GameMsgProtocol.UserMoveToCmd.class, GameMsgProtocol.UserMoveToCmd.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd.newBuilder()
@@ -5431,17 +5449,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserMoveToCmd_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserMoveToCmd_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd.getDefaultInstance();
+      public GameMsgProtocol.UserMoveToCmd getDefaultInstanceForType() {
+        return GameMsgProtocol.UserMoveToCmd.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd result = buildPartial();
+      public GameMsgProtocol.UserMoveToCmd build() {
+        GameMsgProtocol.UserMoveToCmd result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -5449,8 +5467,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd result = new org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd(this);
+      public GameMsgProtocol.UserMoveToCmd buildPartial() {
+        GameMsgProtocol.UserMoveToCmd result = new GameMsgProtocol.UserMoveToCmd(this);
         result.moveFromPosX_ = moveFromPosX_;
         result.moveFromPosY_ = moveFromPosY_;
         result.moveToPosX_ = moveToPosX_;
@@ -5493,16 +5511,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd)other);
+        if (other instanceof GameMsgProtocol.UserMoveToCmd) {
+          return mergeFrom((GameMsgProtocol.UserMoveToCmd)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.UserMoveToCmd other) {
+        if (other == GameMsgProtocol.UserMoveToCmd.getDefaultInstance()) return this;
         if (other.getMoveFromPosX() != 0F) {
           setMoveFromPosX(other.getMoveFromPosX());
         }
@@ -5530,11 +5548,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd parsedMessage = null;
+        GameMsgProtocol.UserMoveToCmd parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.UserMoveToCmd) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -5744,12 +5762,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.UserMoveToCmd)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.UserMoveToCmd DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd();
+      DEFAULT_INSTANCE = new GameMsgProtocol.UserMoveToCmd();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd getDefaultInstance() {
+    public static GameMsgProtocol.UserMoveToCmd getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5774,7 +5792,7 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToCmd getDefaultInstanceForType() {
+    public GameMsgProtocol.UserMoveToCmd getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5944,15 +5962,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserMoveToResult_descriptor;
+      return GameMsgProtocol.internal_static_msg_UserMoveToResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserMoveToResult_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_UserMoveToResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult.Builder.class);
+              GameMsgProtocol.UserMoveToResult.class, GameMsgProtocol.UserMoveToResult.Builder.class);
     }
 
     public static final int MOVEUSERID_FIELD_NUMBER = 1;
@@ -6120,10 +6138,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult)) {
+      if (!(obj instanceof GameMsgProtocol.UserMoveToResult)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult other = (org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult) obj;
+      GameMsgProtocol.UserMoveToResult other = (GameMsgProtocol.UserMoveToResult) obj;
 
       if (getMoveUserId()
           != other.getMoveUserId()) return false;
@@ -6174,69 +6192,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult parseFrom(
+    public static GameMsgProtocol.UserMoveToResult parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult parseFrom(
+    public static GameMsgProtocol.UserMoveToResult parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult parseFrom(
+    public static GameMsgProtocol.UserMoveToResult parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult parseFrom(
+    public static GameMsgProtocol.UserMoveToResult parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult parseFrom(byte[] data)
+    public static GameMsgProtocol.UserMoveToResult parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult parseFrom(
+    public static GameMsgProtocol.UserMoveToResult parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserMoveToResult parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult parseFrom(
+    public static GameMsgProtocol.UserMoveToResult parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserMoveToResult parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult parseDelimitedFrom(
+    public static GameMsgProtocol.UserMoveToResult parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult parseFrom(
+    public static GameMsgProtocol.UserMoveToResult parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult parseFrom(
+    public static GameMsgProtocol.UserMoveToResult parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -6249,7 +6267,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult prototype) {
+    public static Builder newBuilder(GameMsgProtocol.UserMoveToResult prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -6274,18 +6292,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.UserMoveToResult)
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResultOrBuilder {
+        GameMsgProtocol.UserMoveToResultOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserMoveToResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserMoveToResult_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserMoveToResult_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_UserMoveToResult_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult.Builder.class);
+                GameMsgProtocol.UserMoveToResult.class, GameMsgProtocol.UserMoveToResult.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult.newBuilder()
@@ -6324,17 +6342,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserMoveToResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserMoveToResult_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult.getDefaultInstance();
+      public GameMsgProtocol.UserMoveToResult getDefaultInstanceForType() {
+        return GameMsgProtocol.UserMoveToResult.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult result = buildPartial();
+      public GameMsgProtocol.UserMoveToResult build() {
+        GameMsgProtocol.UserMoveToResult result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -6342,8 +6360,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult result = new org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult(this);
+      public GameMsgProtocol.UserMoveToResult buildPartial() {
+        GameMsgProtocol.UserMoveToResult result = new GameMsgProtocol.UserMoveToResult(this);
         result.moveUserId_ = moveUserId_;
         result.moveFromPosX_ = moveFromPosX_;
         result.moveFromPosY_ = moveFromPosY_;
@@ -6388,16 +6406,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult)other);
+        if (other instanceof GameMsgProtocol.UserMoveToResult) {
+          return mergeFrom((GameMsgProtocol.UserMoveToResult)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.UserMoveToResult other) {
+        if (other == GameMsgProtocol.UserMoveToResult.getDefaultInstance()) return this;
         if (other.getMoveUserId() != 0) {
           setMoveUserId(other.getMoveUserId());
         }
@@ -6431,11 +6449,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult parsedMessage = null;
+        GameMsgProtocol.UserMoveToResult parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.UserMoveToResult) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -6719,12 +6737,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.UserMoveToResult)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.UserMoveToResult DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult();
+      DEFAULT_INSTANCE = new GameMsgProtocol.UserMoveToResult();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult getDefaultInstance() {
+    public static GameMsgProtocol.UserMoveToResult getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -6749,7 +6767,7 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.UserMoveToResult getDefaultInstanceForType() {
+    public GameMsgProtocol.UserMoveToResult getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -6850,15 +6868,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserQuitResult_descriptor;
+      return GameMsgProtocol.internal_static_msg_UserQuitResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserQuitResult_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_UserQuitResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult.Builder.class);
+              GameMsgProtocol.UserQuitResult.class, GameMsgProtocol.UserQuitResult.Builder.class);
     }
 
     public static final int QUITUSERID_FIELD_NUMBER = 1;
@@ -6916,10 +6934,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult)) {
+      if (!(obj instanceof GameMsgProtocol.UserQuitResult)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult other = (org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult) obj;
+      GameMsgProtocol.UserQuitResult other = (GameMsgProtocol.UserQuitResult) obj;
 
       if (getQuitUserId()
           != other.getQuitUserId()) return false;
@@ -6941,69 +6959,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult parseFrom(
+    public static GameMsgProtocol.UserQuitResult parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult parseFrom(
+    public static GameMsgProtocol.UserQuitResult parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult parseFrom(
+    public static GameMsgProtocol.UserQuitResult parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult parseFrom(
+    public static GameMsgProtocol.UserQuitResult parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult parseFrom(byte[] data)
+    public static GameMsgProtocol.UserQuitResult parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult parseFrom(
+    public static GameMsgProtocol.UserQuitResult parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserQuitResult parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult parseFrom(
+    public static GameMsgProtocol.UserQuitResult parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserQuitResult parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult parseDelimitedFrom(
+    public static GameMsgProtocol.UserQuitResult parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult parseFrom(
+    public static GameMsgProtocol.UserQuitResult parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult parseFrom(
+    public static GameMsgProtocol.UserQuitResult parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -7016,7 +7034,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult prototype) {
+    public static Builder newBuilder(GameMsgProtocol.UserQuitResult prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -7047,18 +7065,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.UserQuitResult)
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResultOrBuilder {
+        GameMsgProtocol.UserQuitResultOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserQuitResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserQuitResult_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserQuitResult_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_UserQuitResult_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult.Builder.class);
+                GameMsgProtocol.UserQuitResult.class, GameMsgProtocol.UserQuitResult.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult.newBuilder()
@@ -7087,17 +7105,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserQuitResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserQuitResult_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult.getDefaultInstance();
+      public GameMsgProtocol.UserQuitResult getDefaultInstanceForType() {
+        return GameMsgProtocol.UserQuitResult.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult result = buildPartial();
+      public GameMsgProtocol.UserQuitResult build() {
+        GameMsgProtocol.UserQuitResult result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -7105,8 +7123,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult result = new org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult(this);
+      public GameMsgProtocol.UserQuitResult buildPartial() {
+        GameMsgProtocol.UserQuitResult result = new GameMsgProtocol.UserQuitResult(this);
         result.quitUserId_ = quitUserId_;
         onBuilt();
         return result;
@@ -7146,16 +7164,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult)other);
+        if (other instanceof GameMsgProtocol.UserQuitResult) {
+          return mergeFrom((GameMsgProtocol.UserQuitResult)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.UserQuitResult other) {
+        if (other == GameMsgProtocol.UserQuitResult.getDefaultInstance()) return this;
         if (other.getQuitUserId() != 0) {
           setQuitUserId(other.getQuitUserId());
         }
@@ -7174,11 +7192,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult parsedMessage = null;
+        GameMsgProtocol.UserQuitResult parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.UserQuitResult) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -7247,12 +7265,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.UserQuitResult)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.UserQuitResult DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult();
+      DEFAULT_INSTANCE = new GameMsgProtocol.UserQuitResult();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult getDefaultInstance() {
+    public static GameMsgProtocol.UserQuitResult getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7277,7 +7295,7 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.UserQuitResult getDefaultInstanceForType() {
+    public GameMsgProtocol.UserQuitResult getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7359,15 +7377,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserStopCmd_descriptor;
+      return GameMsgProtocol.internal_static_msg_UserStopCmd_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserStopCmd_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_UserStopCmd_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd.Builder.class);
+              GameMsgProtocol.UserStopCmd.class, GameMsgProtocol.UserStopCmd.Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -7403,10 +7421,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd)) {
+      if (!(obj instanceof GameMsgProtocol.UserStopCmd)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd other = (org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd) obj;
+      GameMsgProtocol.UserStopCmd other = (GameMsgProtocol.UserStopCmd) obj;
 
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -7424,69 +7442,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd parseFrom(
+    public static GameMsgProtocol.UserStopCmd parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd parseFrom(
+    public static GameMsgProtocol.UserStopCmd parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd parseFrom(
+    public static GameMsgProtocol.UserStopCmd parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd parseFrom(
+    public static GameMsgProtocol.UserStopCmd parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd parseFrom(byte[] data)
+    public static GameMsgProtocol.UserStopCmd parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd parseFrom(
+    public static GameMsgProtocol.UserStopCmd parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserStopCmd parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd parseFrom(
+    public static GameMsgProtocol.UserStopCmd parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserStopCmd parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd parseDelimitedFrom(
+    public static GameMsgProtocol.UserStopCmd parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd parseFrom(
+    public static GameMsgProtocol.UserStopCmd parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd parseFrom(
+    public static GameMsgProtocol.UserStopCmd parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -7499,7 +7517,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd prototype) {
+    public static Builder newBuilder(GameMsgProtocol.UserStopCmd prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -7526,18 +7544,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.UserStopCmd)
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmdOrBuilder {
+        GameMsgProtocol.UserStopCmdOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserStopCmd_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserStopCmd_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserStopCmd_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_UserStopCmd_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd.Builder.class);
+                GameMsgProtocol.UserStopCmd.class, GameMsgProtocol.UserStopCmd.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd.newBuilder()
@@ -7564,17 +7582,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserStopCmd_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserStopCmd_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd.getDefaultInstance();
+      public GameMsgProtocol.UserStopCmd getDefaultInstanceForType() {
+        return GameMsgProtocol.UserStopCmd.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd result = buildPartial();
+      public GameMsgProtocol.UserStopCmd build() {
+        GameMsgProtocol.UserStopCmd result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -7582,8 +7600,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd result = new org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd(this);
+      public GameMsgProtocol.UserStopCmd buildPartial() {
+        GameMsgProtocol.UserStopCmd result = new GameMsgProtocol.UserStopCmd(this);
         onBuilt();
         return result;
       }
@@ -7622,16 +7640,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd)other);
+        if (other instanceof GameMsgProtocol.UserStopCmd) {
+          return mergeFrom((GameMsgProtocol.UserStopCmd)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.UserStopCmd other) {
+        if (other == GameMsgProtocol.UserStopCmd.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -7647,11 +7665,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd parsedMessage = null;
+        GameMsgProtocol.UserStopCmd parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.UserStopCmd) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -7677,12 +7695,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.UserStopCmd)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.UserStopCmd DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd();
+      DEFAULT_INSTANCE = new GameMsgProtocol.UserStopCmd();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd getDefaultInstance() {
+    public static GameMsgProtocol.UserStopCmd getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7707,7 +7725,7 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.UserStopCmd getDefaultInstanceForType() {
+    public GameMsgProtocol.UserStopCmd getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7832,15 +7850,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserStopResult_descriptor;
+      return GameMsgProtocol.internal_static_msg_UserStopResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserStopResult_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_UserStopResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult.Builder.class);
+              GameMsgProtocol.UserStopResult.class, GameMsgProtocol.UserStopResult.Builder.class);
     }
 
     public static final int STOPUSERID_FIELD_NUMBER = 1;
@@ -7942,10 +7960,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult)) {
+      if (!(obj instanceof GameMsgProtocol.UserStopResult)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult other = (org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult) obj;
+      GameMsgProtocol.UserStopResult other = (GameMsgProtocol.UserStopResult) obj;
 
       if (getStopUserId()
           != other.getStopUserId()) return false;
@@ -7979,69 +7997,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult parseFrom(
+    public static GameMsgProtocol.UserStopResult parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult parseFrom(
+    public static GameMsgProtocol.UserStopResult parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult parseFrom(
+    public static GameMsgProtocol.UserStopResult parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult parseFrom(
+    public static GameMsgProtocol.UserStopResult parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult parseFrom(byte[] data)
+    public static GameMsgProtocol.UserStopResult parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult parseFrom(
+    public static GameMsgProtocol.UserStopResult parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserStopResult parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult parseFrom(
+    public static GameMsgProtocol.UserStopResult parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserStopResult parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult parseDelimitedFrom(
+    public static GameMsgProtocol.UserStopResult parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult parseFrom(
+    public static GameMsgProtocol.UserStopResult parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult parseFrom(
+    public static GameMsgProtocol.UserStopResult parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -8054,7 +8072,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult prototype) {
+    public static Builder newBuilder(GameMsgProtocol.UserStopResult prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -8079,18 +8097,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.UserStopResult)
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResultOrBuilder {
+        GameMsgProtocol.UserStopResultOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserStopResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserStopResult_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserStopResult_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_UserStopResult_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult.Builder.class);
+                GameMsgProtocol.UserStopResult.class, GameMsgProtocol.UserStopResult.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult.newBuilder()
@@ -8123,17 +8141,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserStopResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserStopResult_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult.getDefaultInstance();
+      public GameMsgProtocol.UserStopResult getDefaultInstanceForType() {
+        return GameMsgProtocol.UserStopResult.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult result = buildPartial();
+      public GameMsgProtocol.UserStopResult build() {
+        GameMsgProtocol.UserStopResult result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -8141,8 +8159,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult result = new org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult(this);
+      public GameMsgProtocol.UserStopResult buildPartial() {
+        GameMsgProtocol.UserStopResult result = new GameMsgProtocol.UserStopResult(this);
         result.stopUserId_ = stopUserId_;
         result.stopAtPosX_ = stopAtPosX_;
         result.stopAtPosY_ = stopAtPosY_;
@@ -8184,16 +8202,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult)other);
+        if (other instanceof GameMsgProtocol.UserStopResult) {
+          return mergeFrom((GameMsgProtocol.UserStopResult)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.UserStopResult other) {
+        if (other == GameMsgProtocol.UserStopResult.getDefaultInstance()) return this;
         if (other.getStopUserId() != 0) {
           setStopUserId(other.getStopUserId());
         }
@@ -8218,11 +8236,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult parsedMessage = null;
+        GameMsgProtocol.UserStopResult parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.UserStopResult) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -8377,12 +8395,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.UserStopResult)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.UserStopResult DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult();
+      DEFAULT_INSTANCE = new GameMsgProtocol.UserStopResult();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult getDefaultInstance() {
+    public static GameMsgProtocol.UserStopResult getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -8407,7 +8425,7 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.UserStopResult getDefaultInstanceForType() {
+    public GameMsgProtocol.UserStopResult getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -8504,15 +8522,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserAttkCmd_descriptor;
+      return GameMsgProtocol.internal_static_msg_UserAttkCmd_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserAttkCmd_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_UserAttkCmd_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd.Builder.class);
+              GameMsgProtocol.UserAttkCmd.class, GameMsgProtocol.UserAttkCmd.Builder.class);
     }
 
     public static final int TARGETUSERID_FIELD_NUMBER = 1;
@@ -8570,10 +8588,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd)) {
+      if (!(obj instanceof GameMsgProtocol.UserAttkCmd)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd other = (org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd) obj;
+      GameMsgProtocol.UserAttkCmd other = (GameMsgProtocol.UserAttkCmd) obj;
 
       if (getTargetUserId()
           != other.getTargetUserId()) return false;
@@ -8595,69 +8613,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd parseFrom(
+    public static GameMsgProtocol.UserAttkCmd parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd parseFrom(
+    public static GameMsgProtocol.UserAttkCmd parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd parseFrom(
+    public static GameMsgProtocol.UserAttkCmd parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd parseFrom(
+    public static GameMsgProtocol.UserAttkCmd parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd parseFrom(byte[] data)
+    public static GameMsgProtocol.UserAttkCmd parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd parseFrom(
+    public static GameMsgProtocol.UserAttkCmd parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserAttkCmd parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd parseFrom(
+    public static GameMsgProtocol.UserAttkCmd parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserAttkCmd parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd parseDelimitedFrom(
+    public static GameMsgProtocol.UserAttkCmd parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd parseFrom(
+    public static GameMsgProtocol.UserAttkCmd parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd parseFrom(
+    public static GameMsgProtocol.UserAttkCmd parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -8670,7 +8688,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd prototype) {
+    public static Builder newBuilder(GameMsgProtocol.UserAttkCmd prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -8697,18 +8715,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.UserAttkCmd)
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmdOrBuilder {
+        GameMsgProtocol.UserAttkCmdOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserAttkCmd_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserAttkCmd_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserAttkCmd_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_UserAttkCmd_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd.Builder.class);
+                GameMsgProtocol.UserAttkCmd.class, GameMsgProtocol.UserAttkCmd.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd.newBuilder()
@@ -8737,17 +8755,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserAttkCmd_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserAttkCmd_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd.getDefaultInstance();
+      public GameMsgProtocol.UserAttkCmd getDefaultInstanceForType() {
+        return GameMsgProtocol.UserAttkCmd.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd result = buildPartial();
+      public GameMsgProtocol.UserAttkCmd build() {
+        GameMsgProtocol.UserAttkCmd result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -8755,8 +8773,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd result = new org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd(this);
+      public GameMsgProtocol.UserAttkCmd buildPartial() {
+        GameMsgProtocol.UserAttkCmd result = new GameMsgProtocol.UserAttkCmd(this);
         result.targetUserId_ = targetUserId_;
         onBuilt();
         return result;
@@ -8796,16 +8814,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd)other);
+        if (other instanceof GameMsgProtocol.UserAttkCmd) {
+          return mergeFrom((GameMsgProtocol.UserAttkCmd)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.UserAttkCmd other) {
+        if (other == GameMsgProtocol.UserAttkCmd.getDefaultInstance()) return this;
         if (other.getTargetUserId() != 0) {
           setTargetUserId(other.getTargetUserId());
         }
@@ -8824,11 +8842,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd parsedMessage = null;
+        GameMsgProtocol.UserAttkCmd parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.UserAttkCmd) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -8897,12 +8915,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.UserAttkCmd)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.UserAttkCmd DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd();
+      DEFAULT_INSTANCE = new GameMsgProtocol.UserAttkCmd();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd getDefaultInstance() {
+    public static GameMsgProtocol.UserAttkCmd getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -8927,7 +8945,7 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkCmd getDefaultInstanceForType() {
+    public GameMsgProtocol.UserAttkCmd getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -9037,15 +9055,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserAttkResult_descriptor;
+      return GameMsgProtocol.internal_static_msg_UserAttkResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserAttkResult_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_UserAttkResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult.Builder.class);
+              GameMsgProtocol.UserAttkResult.class, GameMsgProtocol.UserAttkResult.Builder.class);
     }
 
     public static final int ATTKUSERID_FIELD_NUMBER = 1;
@@ -9125,10 +9143,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult)) {
+      if (!(obj instanceof GameMsgProtocol.UserAttkResult)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult other = (org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult) obj;
+      GameMsgProtocol.UserAttkResult other = (GameMsgProtocol.UserAttkResult) obj;
 
       if (getAttkUserId()
           != other.getAttkUserId()) return false;
@@ -9154,69 +9172,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult parseFrom(
+    public static GameMsgProtocol.UserAttkResult parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult parseFrom(
+    public static GameMsgProtocol.UserAttkResult parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult parseFrom(
+    public static GameMsgProtocol.UserAttkResult parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult parseFrom(
+    public static GameMsgProtocol.UserAttkResult parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult parseFrom(byte[] data)
+    public static GameMsgProtocol.UserAttkResult parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult parseFrom(
+    public static GameMsgProtocol.UserAttkResult parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserAttkResult parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult parseFrom(
+    public static GameMsgProtocol.UserAttkResult parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserAttkResult parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult parseDelimitedFrom(
+    public static GameMsgProtocol.UserAttkResult parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult parseFrom(
+    public static GameMsgProtocol.UserAttkResult parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult parseFrom(
+    public static GameMsgProtocol.UserAttkResult parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -9229,7 +9247,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult prototype) {
+    public static Builder newBuilder(GameMsgProtocol.UserAttkResult prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -9254,18 +9272,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.UserAttkResult)
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResultOrBuilder {
+        GameMsgProtocol.UserAttkResultOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserAttkResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserAttkResult_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserAttkResult_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_UserAttkResult_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult.Builder.class);
+                GameMsgProtocol.UserAttkResult.class, GameMsgProtocol.UserAttkResult.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult.newBuilder()
@@ -9296,17 +9314,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserAttkResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserAttkResult_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult.getDefaultInstance();
+      public GameMsgProtocol.UserAttkResult getDefaultInstanceForType() {
+        return GameMsgProtocol.UserAttkResult.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult result = buildPartial();
+      public GameMsgProtocol.UserAttkResult build() {
+        GameMsgProtocol.UserAttkResult result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -9314,8 +9332,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult result = new org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult(this);
+      public GameMsgProtocol.UserAttkResult buildPartial() {
+        GameMsgProtocol.UserAttkResult result = new GameMsgProtocol.UserAttkResult(this);
         result.attkUserId_ = attkUserId_;
         result.targetUserId_ = targetUserId_;
         onBuilt();
@@ -9356,16 +9374,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult)other);
+        if (other instanceof GameMsgProtocol.UserAttkResult) {
+          return mergeFrom((GameMsgProtocol.UserAttkResult)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.UserAttkResult other) {
+        if (other == GameMsgProtocol.UserAttkResult.getDefaultInstance()) return this;
         if (other.getAttkUserId() != 0) {
           setAttkUserId(other.getAttkUserId());
         }
@@ -9387,11 +9405,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult parsedMessage = null;
+        GameMsgProtocol.UserAttkResult parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.UserAttkResult) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -9503,12 +9521,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.UserAttkResult)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.UserAttkResult DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult();
+      DEFAULT_INSTANCE = new GameMsgProtocol.UserAttkResult();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult getDefaultInstance() {
+    public static GameMsgProtocol.UserAttkResult getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -9533,7 +9551,7 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.UserAttkResult getDefaultInstanceForType() {
+    public GameMsgProtocol.UserAttkResult getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -9643,15 +9661,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserSubtractHpResult_descriptor;
+      return GameMsgProtocol.internal_static_msg_UserSubtractHpResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserSubtractHpResult_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_UserSubtractHpResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult.Builder.class);
+              GameMsgProtocol.UserSubtractHpResult.class, GameMsgProtocol.UserSubtractHpResult.Builder.class);
     }
 
     public static final int TARGETUSERID_FIELD_NUMBER = 1;
@@ -9731,10 +9749,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult)) {
+      if (!(obj instanceof GameMsgProtocol.UserSubtractHpResult)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult other = (org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult) obj;
+      GameMsgProtocol.UserSubtractHpResult other = (GameMsgProtocol.UserSubtractHpResult) obj;
 
       if (getTargetUserId()
           != other.getTargetUserId()) return false;
@@ -9760,69 +9778,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult parseFrom(
+    public static GameMsgProtocol.UserSubtractHpResult parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult parseFrom(
+    public static GameMsgProtocol.UserSubtractHpResult parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult parseFrom(
+    public static GameMsgProtocol.UserSubtractHpResult parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult parseFrom(
+    public static GameMsgProtocol.UserSubtractHpResult parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult parseFrom(byte[] data)
+    public static GameMsgProtocol.UserSubtractHpResult parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult parseFrom(
+    public static GameMsgProtocol.UserSubtractHpResult parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserSubtractHpResult parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult parseFrom(
+    public static GameMsgProtocol.UserSubtractHpResult parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserSubtractHpResult parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult parseDelimitedFrom(
+    public static GameMsgProtocol.UserSubtractHpResult parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult parseFrom(
+    public static GameMsgProtocol.UserSubtractHpResult parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult parseFrom(
+    public static GameMsgProtocol.UserSubtractHpResult parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -9835,7 +9853,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult prototype) {
+    public static Builder newBuilder(GameMsgProtocol.UserSubtractHpResult prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -9860,18 +9878,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.UserSubtractHpResult)
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResultOrBuilder {
+        GameMsgProtocol.UserSubtractHpResultOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserSubtractHpResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserSubtractHpResult_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserSubtractHpResult_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_UserSubtractHpResult_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult.Builder.class);
+                GameMsgProtocol.UserSubtractHpResult.class, GameMsgProtocol.UserSubtractHpResult.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult.newBuilder()
@@ -9902,17 +9920,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserSubtractHpResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserSubtractHpResult_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult.getDefaultInstance();
+      public GameMsgProtocol.UserSubtractHpResult getDefaultInstanceForType() {
+        return GameMsgProtocol.UserSubtractHpResult.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult result = buildPartial();
+      public GameMsgProtocol.UserSubtractHpResult build() {
+        GameMsgProtocol.UserSubtractHpResult result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -9920,8 +9938,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult result = new org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult(this);
+      public GameMsgProtocol.UserSubtractHpResult buildPartial() {
+        GameMsgProtocol.UserSubtractHpResult result = new GameMsgProtocol.UserSubtractHpResult(this);
         result.targetUserId_ = targetUserId_;
         result.subtractHp_ = subtractHp_;
         onBuilt();
@@ -9962,16 +9980,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult)other);
+        if (other instanceof GameMsgProtocol.UserSubtractHpResult) {
+          return mergeFrom((GameMsgProtocol.UserSubtractHpResult)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.UserSubtractHpResult other) {
+        if (other == GameMsgProtocol.UserSubtractHpResult.getDefaultInstance()) return this;
         if (other.getTargetUserId() != 0) {
           setTargetUserId(other.getTargetUserId());
         }
@@ -9993,11 +10011,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult parsedMessage = null;
+        GameMsgProtocol.UserSubtractHpResult parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.UserSubtractHpResult) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -10109,12 +10127,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.UserSubtractHpResult)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.UserSubtractHpResult DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult();
+      DEFAULT_INSTANCE = new GameMsgProtocol.UserSubtractHpResult();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult getDefaultInstance() {
+    public static GameMsgProtocol.UserSubtractHpResult getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -10139,7 +10157,7 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.UserSubtractHpResult getDefaultInstanceForType() {
+    public GameMsgProtocol.UserSubtractHpResult getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -10234,15 +10252,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserDieResult_descriptor;
+      return GameMsgProtocol.internal_static_msg_UserDieResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserDieResult_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_UserDieResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult.Builder.class);
+              GameMsgProtocol.UserDieResult.class, GameMsgProtocol.UserDieResult.Builder.class);
     }
 
     public static final int TARGETUSERID_FIELD_NUMBER = 1;
@@ -10300,10 +10318,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult)) {
+      if (!(obj instanceof GameMsgProtocol.UserDieResult)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult other = (org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult) obj;
+      GameMsgProtocol.UserDieResult other = (GameMsgProtocol.UserDieResult) obj;
 
       if (getTargetUserId()
           != other.getTargetUserId()) return false;
@@ -10325,69 +10343,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult parseFrom(
+    public static GameMsgProtocol.UserDieResult parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult parseFrom(
+    public static GameMsgProtocol.UserDieResult parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult parseFrom(
+    public static GameMsgProtocol.UserDieResult parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult parseFrom(
+    public static GameMsgProtocol.UserDieResult parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult parseFrom(byte[] data)
+    public static GameMsgProtocol.UserDieResult parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult parseFrom(
+    public static GameMsgProtocol.UserDieResult parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserDieResult parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult parseFrom(
+    public static GameMsgProtocol.UserDieResult parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserDieResult parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult parseDelimitedFrom(
+    public static GameMsgProtocol.UserDieResult parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult parseFrom(
+    public static GameMsgProtocol.UserDieResult parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult parseFrom(
+    public static GameMsgProtocol.UserDieResult parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -10400,7 +10418,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult prototype) {
+    public static Builder newBuilder(GameMsgProtocol.UserDieResult prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -10425,18 +10443,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.UserDieResult)
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResultOrBuilder {
+        GameMsgProtocol.UserDieResultOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserDieResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserDieResult_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserDieResult_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_UserDieResult_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult.Builder.class);
+                GameMsgProtocol.UserDieResult.class, GameMsgProtocol.UserDieResult.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult.newBuilder()
@@ -10465,17 +10483,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserDieResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserDieResult_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult.getDefaultInstance();
+      public GameMsgProtocol.UserDieResult getDefaultInstanceForType() {
+        return GameMsgProtocol.UserDieResult.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult result = buildPartial();
+      public GameMsgProtocol.UserDieResult build() {
+        GameMsgProtocol.UserDieResult result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -10483,8 +10501,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult result = new org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult(this);
+      public GameMsgProtocol.UserDieResult buildPartial() {
+        GameMsgProtocol.UserDieResult result = new GameMsgProtocol.UserDieResult(this);
         result.targetUserId_ = targetUserId_;
         onBuilt();
         return result;
@@ -10524,16 +10542,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult)other);
+        if (other instanceof GameMsgProtocol.UserDieResult) {
+          return mergeFrom((GameMsgProtocol.UserDieResult)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.UserDieResult other) {
+        if (other == GameMsgProtocol.UserDieResult.getDefaultInstance()) return this;
         if (other.getTargetUserId() != 0) {
           setTargetUserId(other.getTargetUserId());
         }
@@ -10552,11 +10570,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult parsedMessage = null;
+        GameMsgProtocol.UserDieResult parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.UserDieResult) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -10625,12 +10643,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.UserDieResult)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.UserDieResult DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult();
+      DEFAULT_INSTANCE = new GameMsgProtocol.UserDieResult();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult getDefaultInstance() {
+    public static GameMsgProtocol.UserDieResult getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -10655,7 +10673,7 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.UserDieResult getDefaultInstanceForType() {
+    public GameMsgProtocol.UserDieResult getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -10791,15 +10809,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserLoginCmd_descriptor;
+      return GameMsgProtocol.internal_static_msg_UserLoginCmd_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserLoginCmd_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_UserLoginCmd_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd.Builder.class);
+              GameMsgProtocol.UserLoginCmd.class, GameMsgProtocol.UserLoginCmd.Builder.class);
     }
 
     public static final int USERNAME_FIELD_NUMBER = 1;
@@ -10939,10 +10957,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd)) {
+      if (!(obj instanceof GameMsgProtocol.UserLoginCmd)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd other = (org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd) obj;
+      GameMsgProtocol.UserLoginCmd other = (GameMsgProtocol.UserLoginCmd) obj;
 
       if (!getUserName()
           .equals(other.getUserName())) return false;
@@ -10968,69 +10986,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd parseFrom(
+    public static GameMsgProtocol.UserLoginCmd parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd parseFrom(
+    public static GameMsgProtocol.UserLoginCmd parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd parseFrom(
+    public static GameMsgProtocol.UserLoginCmd parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd parseFrom(
+    public static GameMsgProtocol.UserLoginCmd parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd parseFrom(byte[] data)
+    public static GameMsgProtocol.UserLoginCmd parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd parseFrom(
+    public static GameMsgProtocol.UserLoginCmd parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserLoginCmd parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd parseFrom(
+    public static GameMsgProtocol.UserLoginCmd parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserLoginCmd parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd parseDelimitedFrom(
+    public static GameMsgProtocol.UserLoginCmd parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd parseFrom(
+    public static GameMsgProtocol.UserLoginCmd parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd parseFrom(
+    public static GameMsgProtocol.UserLoginCmd parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -11043,7 +11061,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd prototype) {
+    public static Builder newBuilder(GameMsgProtocol.UserLoginCmd prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -11070,18 +11088,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.UserLoginCmd)
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmdOrBuilder {
+        GameMsgProtocol.UserLoginCmdOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserLoginCmd_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserLoginCmd_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserLoginCmd_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_UserLoginCmd_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd.Builder.class);
+                GameMsgProtocol.UserLoginCmd.class, GameMsgProtocol.UserLoginCmd.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd.newBuilder()
@@ -11112,17 +11130,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserLoginCmd_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserLoginCmd_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd.getDefaultInstance();
+      public GameMsgProtocol.UserLoginCmd getDefaultInstanceForType() {
+        return GameMsgProtocol.UserLoginCmd.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd result = buildPartial();
+      public GameMsgProtocol.UserLoginCmd build() {
+        GameMsgProtocol.UserLoginCmd result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -11130,8 +11148,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd result = new org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd(this);
+      public GameMsgProtocol.UserLoginCmd buildPartial() {
+        GameMsgProtocol.UserLoginCmd result = new GameMsgProtocol.UserLoginCmd(this);
         result.userName_ = userName_;
         result.password_ = password_;
         onBuilt();
@@ -11172,16 +11190,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd)other);
+        if (other instanceof GameMsgProtocol.UserLoginCmd) {
+          return mergeFrom((GameMsgProtocol.UserLoginCmd)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.UserLoginCmd other) {
+        if (other == GameMsgProtocol.UserLoginCmd.getDefaultInstance()) return this;
         if (!other.getUserName().isEmpty()) {
           userName_ = other.userName_;
           onChanged();
@@ -11205,11 +11223,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd parsedMessage = null;
+        GameMsgProtocol.UserLoginCmd parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.UserLoginCmd) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -11427,12 +11445,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.UserLoginCmd)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.UserLoginCmd DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd();
+      DEFAULT_INSTANCE = new GameMsgProtocol.UserLoginCmd();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd getDefaultInstance() {
+    public static GameMsgProtocol.UserLoginCmd getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -11457,7 +11475,7 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginCmd getDefaultInstanceForType() {
+    public GameMsgProtocol.UserLoginCmd getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -11607,15 +11625,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserLoginResult_descriptor;
+      return GameMsgProtocol.internal_static_msg_UserLoginResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserLoginResult_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_UserLoginResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult.Builder.class);
+              GameMsgProtocol.UserLoginResult.class, GameMsgProtocol.UserLoginResult.Builder.class);
     }
 
     public static final int USERID_FIELD_NUMBER = 1;
@@ -11778,10 +11796,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult)) {
+      if (!(obj instanceof GameMsgProtocol.UserLoginResult)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult other = (org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult) obj;
+      GameMsgProtocol.UserLoginResult other = (GameMsgProtocol.UserLoginResult) obj;
 
       if (getUserId()
           != other.getUserId()) return false;
@@ -11811,69 +11829,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult parseFrom(
+    public static GameMsgProtocol.UserLoginResult parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult parseFrom(
+    public static GameMsgProtocol.UserLoginResult parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult parseFrom(
+    public static GameMsgProtocol.UserLoginResult parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult parseFrom(
+    public static GameMsgProtocol.UserLoginResult parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult parseFrom(byte[] data)
+    public static GameMsgProtocol.UserLoginResult parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult parseFrom(
+    public static GameMsgProtocol.UserLoginResult parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserLoginResult parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult parseFrom(
+    public static GameMsgProtocol.UserLoginResult parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.UserLoginResult parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult parseDelimitedFrom(
+    public static GameMsgProtocol.UserLoginResult parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult parseFrom(
+    public static GameMsgProtocol.UserLoginResult parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult parseFrom(
+    public static GameMsgProtocol.UserLoginResult parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -11886,7 +11904,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult prototype) {
+    public static Builder newBuilder(GameMsgProtocol.UserLoginResult prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -11911,18 +11929,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.UserLoginResult)
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResultOrBuilder {
+        GameMsgProtocol.UserLoginResultOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserLoginResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserLoginResult_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserLoginResult_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_UserLoginResult_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult.Builder.class);
+                GameMsgProtocol.UserLoginResult.class, GameMsgProtocol.UserLoginResult.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult.newBuilder()
@@ -11955,17 +11973,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_UserLoginResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_UserLoginResult_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult.getDefaultInstance();
+      public GameMsgProtocol.UserLoginResult getDefaultInstanceForType() {
+        return GameMsgProtocol.UserLoginResult.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult result = buildPartial();
+      public GameMsgProtocol.UserLoginResult build() {
+        GameMsgProtocol.UserLoginResult result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -11973,8 +11991,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult result = new org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult(this);
+      public GameMsgProtocol.UserLoginResult buildPartial() {
+        GameMsgProtocol.UserLoginResult result = new GameMsgProtocol.UserLoginResult(this);
         result.userId_ = userId_;
         result.userName_ = userName_;
         result.heroAvatar_ = heroAvatar_;
@@ -12016,16 +12034,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult)other);
+        if (other instanceof GameMsgProtocol.UserLoginResult) {
+          return mergeFrom((GameMsgProtocol.UserLoginResult)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.UserLoginResult other) {
+        if (other == GameMsgProtocol.UserLoginResult.getDefaultInstance()) return this;
         if (other.getUserId() != 0) {
           setUserId(other.getUserId());
         }
@@ -12052,11 +12070,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult parsedMessage = null;
+        GameMsgProtocol.UserLoginResult parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.UserLoginResult) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -12320,12 +12338,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.UserLoginResult)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.UserLoginResult DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult();
+      DEFAULT_INSTANCE = new GameMsgProtocol.UserLoginResult();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult getDefaultInstance() {
+    public static GameMsgProtocol.UserLoginResult getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -12350,7 +12368,7 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.UserLoginResult getDefaultInstanceForType() {
+    public GameMsgProtocol.UserLoginResult getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -12460,15 +12478,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_SelectHeroCmd_descriptor;
+      return GameMsgProtocol.internal_static_msg_SelectHeroCmd_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_SelectHeroCmd_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_SelectHeroCmd_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd.class, org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd.Builder.class);
+              GameMsgProtocol.SelectHeroCmd.class, GameMsgProtocol.SelectHeroCmd.Builder.class);
     }
 
     public static final int HEROAVATAR_FIELD_NUMBER = 1;
@@ -12556,10 +12574,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd)) {
+      if (!(obj instanceof GameMsgProtocol.SelectHeroCmd)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd other = (org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd) obj;
+      GameMsgProtocol.SelectHeroCmd other = (GameMsgProtocol.SelectHeroCmd) obj;
 
       if (!getHeroAvatar()
           .equals(other.getHeroAvatar())) return false;
@@ -12581,69 +12599,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd parseFrom(
+    public static GameMsgProtocol.SelectHeroCmd parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd parseFrom(
+    public static GameMsgProtocol.SelectHeroCmd parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd parseFrom(
+    public static GameMsgProtocol.SelectHeroCmd parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd parseFrom(
+    public static GameMsgProtocol.SelectHeroCmd parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd parseFrom(byte[] data)
+    public static GameMsgProtocol.SelectHeroCmd parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd parseFrom(
+    public static GameMsgProtocol.SelectHeroCmd parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.SelectHeroCmd parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd parseFrom(
+    public static GameMsgProtocol.SelectHeroCmd parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.SelectHeroCmd parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd parseDelimitedFrom(
+    public static GameMsgProtocol.SelectHeroCmd parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd parseFrom(
+    public static GameMsgProtocol.SelectHeroCmd parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd parseFrom(
+    public static GameMsgProtocol.SelectHeroCmd parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -12656,7 +12674,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd prototype) {
+    public static Builder newBuilder(GameMsgProtocol.SelectHeroCmd prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -12684,18 +12702,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.SelectHeroCmd)
-        org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmdOrBuilder {
+        GameMsgProtocol.SelectHeroCmdOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_SelectHeroCmd_descriptor;
+        return GameMsgProtocol.internal_static_msg_SelectHeroCmd_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_SelectHeroCmd_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_SelectHeroCmd_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd.class, org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd.Builder.class);
+                GameMsgProtocol.SelectHeroCmd.class, GameMsgProtocol.SelectHeroCmd.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd.newBuilder()
@@ -12724,17 +12742,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_SelectHeroCmd_descriptor;
+        return GameMsgProtocol.internal_static_msg_SelectHeroCmd_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd.getDefaultInstance();
+      public GameMsgProtocol.SelectHeroCmd getDefaultInstanceForType() {
+        return GameMsgProtocol.SelectHeroCmd.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd result = buildPartial();
+      public GameMsgProtocol.SelectHeroCmd build() {
+        GameMsgProtocol.SelectHeroCmd result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -12742,8 +12760,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd result = new org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd(this);
+      public GameMsgProtocol.SelectHeroCmd buildPartial() {
+        GameMsgProtocol.SelectHeroCmd result = new GameMsgProtocol.SelectHeroCmd(this);
         result.heroAvatar_ = heroAvatar_;
         onBuilt();
         return result;
@@ -12783,16 +12801,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd)other);
+        if (other instanceof GameMsgProtocol.SelectHeroCmd) {
+          return mergeFrom((GameMsgProtocol.SelectHeroCmd)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.SelectHeroCmd other) {
+        if (other == GameMsgProtocol.SelectHeroCmd.getDefaultInstance()) return this;
         if (!other.getHeroAvatar().isEmpty()) {
           heroAvatar_ = other.heroAvatar_;
           onChanged();
@@ -12812,11 +12830,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd parsedMessage = null;
+        GameMsgProtocol.SelectHeroCmd parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.SelectHeroCmd) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -12938,12 +12956,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.SelectHeroCmd)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.SelectHeroCmd DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd();
+      DEFAULT_INSTANCE = new GameMsgProtocol.SelectHeroCmd();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd getDefaultInstance() {
+    public static GameMsgProtocol.SelectHeroCmd getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -12968,7 +12986,7 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroCmd getDefaultInstanceForType() {
+    public GameMsgProtocol.SelectHeroCmd getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -13077,15 +13095,15 @@ public final class GameMsgProtocol {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_SelectHeroResult_descriptor;
+      return GameMsgProtocol.internal_static_msg_SelectHeroResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_SelectHeroResult_fieldAccessorTable
+      return GameMsgProtocol.internal_static_msg_SelectHeroResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult.Builder.class);
+              GameMsgProtocol.SelectHeroResult.class, GameMsgProtocol.SelectHeroResult.Builder.class);
     }
 
     public static final int HEROAVATAR_FIELD_NUMBER = 1;
@@ -13175,10 +13193,10 @@ public final class GameMsgProtocol {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult)) {
+      if (!(obj instanceof GameMsgProtocol.SelectHeroResult)) {
         return super.equals(obj);
       }
-      org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult other = (org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult) obj;
+      GameMsgProtocol.SelectHeroResult other = (GameMsgProtocol.SelectHeroResult) obj;
 
       if (!getHeroAvatar()
           .equals(other.getHeroAvatar())) return false;
@@ -13200,69 +13218,69 @@ public final class GameMsgProtocol {
       return hash;
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult parseFrom(
+    public static GameMsgProtocol.SelectHeroResult parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult parseFrom(
+    public static GameMsgProtocol.SelectHeroResult parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult parseFrom(
+    public static GameMsgProtocol.SelectHeroResult parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult parseFrom(
+    public static GameMsgProtocol.SelectHeroResult parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult parseFrom(byte[] data)
+    public static GameMsgProtocol.SelectHeroResult parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult parseFrom(
+    public static GameMsgProtocol.SelectHeroResult parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult parseFrom(java.io.InputStream input)
+    public static GameMsgProtocol.SelectHeroResult parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult parseFrom(
+    public static GameMsgProtocol.SelectHeroResult parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult parseDelimitedFrom(java.io.InputStream input)
+    public static GameMsgProtocol.SelectHeroResult parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult parseDelimitedFrom(
+    public static GameMsgProtocol.SelectHeroResult parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult parseFrom(
+    public static GameMsgProtocol.SelectHeroResult parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult parseFrom(
+    public static GameMsgProtocol.SelectHeroResult parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -13275,7 +13293,7 @@ public final class GameMsgProtocol {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult prototype) {
+    public static Builder newBuilder(GameMsgProtocol.SelectHeroResult prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -13300,18 +13318,18 @@ public final class GameMsgProtocol {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:msg.SelectHeroResult)
-        org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResultOrBuilder {
+        GameMsgProtocol.SelectHeroResultOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_SelectHeroResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_SelectHeroResult_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_SelectHeroResult_fieldAccessorTable
+        return GameMsgProtocol.internal_static_msg_SelectHeroResult_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult.class, org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult.Builder.class);
+                GameMsgProtocol.SelectHeroResult.class, GameMsgProtocol.SelectHeroResult.Builder.class);
       }
 
       // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult.newBuilder()
@@ -13340,17 +13358,17 @@ public final class GameMsgProtocol {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.internal_static_msg_SelectHeroResult_descriptor;
+        return GameMsgProtocol.internal_static_msg_SelectHeroResult_descriptor;
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult getDefaultInstanceForType() {
-        return org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult.getDefaultInstance();
+      public GameMsgProtocol.SelectHeroResult getDefaultInstanceForType() {
+        return GameMsgProtocol.SelectHeroResult.getDefaultInstance();
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult build() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult result = buildPartial();
+      public GameMsgProtocol.SelectHeroResult build() {
+        GameMsgProtocol.SelectHeroResult result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -13358,8 +13376,8 @@ public final class GameMsgProtocol {
       }
 
       @java.lang.Override
-      public org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult buildPartial() {
-        org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult result = new org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult(this);
+      public GameMsgProtocol.SelectHeroResult buildPartial() {
+        GameMsgProtocol.SelectHeroResult result = new GameMsgProtocol.SelectHeroResult(this);
         result.heroAvatar_ = heroAvatar_;
         onBuilt();
         return result;
@@ -13399,16 +13417,16 @@ public final class GameMsgProtocol {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult) {
-          return mergeFrom((org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult)other);
+        if (other instanceof GameMsgProtocol.SelectHeroResult) {
+          return mergeFrom((GameMsgProtocol.SelectHeroResult)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult other) {
-        if (other == org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult.getDefaultInstance()) return this;
+      public Builder mergeFrom(GameMsgProtocol.SelectHeroResult other) {
+        if (other == GameMsgProtocol.SelectHeroResult.getDefaultInstance()) return this;
         if (!other.getHeroAvatar().isEmpty()) {
           heroAvatar_ = other.heroAvatar_;
           onChanged();
@@ -13428,11 +13446,11 @@ public final class GameMsgProtocol {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult parsedMessage = null;
+        GameMsgProtocol.SelectHeroResult parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult) e.getUnfinishedMessage();
+          parsedMessage = (GameMsgProtocol.SelectHeroResult) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -13559,12 +13577,12 @@ public final class GameMsgProtocol {
     }
 
     // @@protoc_insertion_point(class_scope:msg.SelectHeroResult)
-    private static final org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult DEFAULT_INSTANCE;
+    private static final GameMsgProtocol.SelectHeroResult DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult();
+      DEFAULT_INSTANCE = new GameMsgProtocol.SelectHeroResult();
     }
 
-    public static org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult getDefaultInstance() {
+    public static GameMsgProtocol.SelectHeroResult getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -13589,7 +13607,2418 @@ public final class GameMsgProtocol {
     }
 
     @java.lang.Override
-    public org.tinygame.legendstory.msg.GameMsgProtocol.SelectHeroResult getDefaultInstanceForType() {
+    public GameMsgProtocol.SelectHeroResult getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface GetRankCmdOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:msg.GetRankCmd)
+      com.google.protobuf.MessageOrBuilder {
+  }
+  /**
+   * <pre>
+   * 获取排行榜
+   * /////////////////////////////////////////////////////////////////////
+   * 指令
+   * </pre>
+   *
+   * Protobuf type {@code msg.GetRankCmd}
+   */
+  public static final class GetRankCmd extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:msg.GetRankCmd)
+      GetRankCmdOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use GetRankCmd.newBuilder() to construct.
+    private GetRankCmd(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GetRankCmd() {
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new GetRankCmd();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GetRankCmd(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return GameMsgProtocol.internal_static_msg_GetRankCmd_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return GameMsgProtocol.internal_static_msg_GetRankCmd_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              GameMsgProtocol.GetRankCmd.class, GameMsgProtocol.GetRankCmd.Builder.class);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof GameMsgProtocol.GetRankCmd)) {
+        return super.equals(obj);
+      }
+      GameMsgProtocol.GetRankCmd other = (GameMsgProtocol.GetRankCmd) obj;
+
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static GameMsgProtocol.GetRankCmd parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static GameMsgProtocol.GetRankCmd parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static GameMsgProtocol.GetRankCmd parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static GameMsgProtocol.GetRankCmd parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static GameMsgProtocol.GetRankCmd parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static GameMsgProtocol.GetRankCmd parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static GameMsgProtocol.GetRankCmd parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static GameMsgProtocol.GetRankCmd parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static GameMsgProtocol.GetRankCmd parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static GameMsgProtocol.GetRankCmd parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static GameMsgProtocol.GetRankCmd parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static GameMsgProtocol.GetRankCmd parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(GameMsgProtocol.GetRankCmd prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     * 获取排行榜
+     * /////////////////////////////////////////////////////////////////////
+     * 指令
+     * </pre>
+     *
+     * Protobuf type {@code msg.GetRankCmd}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:msg.GetRankCmd)
+        GameMsgProtocol.GetRankCmdOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return GameMsgProtocol.internal_static_msg_GetRankCmd_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return GameMsgProtocol.internal_static_msg_GetRankCmd_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                GameMsgProtocol.GetRankCmd.class, GameMsgProtocol.GetRankCmd.Builder.class);
+      }
+
+      // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.GetRankCmd.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return GameMsgProtocol.internal_static_msg_GetRankCmd_descriptor;
+      }
+
+      @java.lang.Override
+      public GameMsgProtocol.GetRankCmd getDefaultInstanceForType() {
+        return GameMsgProtocol.GetRankCmd.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public GameMsgProtocol.GetRankCmd build() {
+        GameMsgProtocol.GetRankCmd result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public GameMsgProtocol.GetRankCmd buildPartial() {
+        GameMsgProtocol.GetRankCmd result = new GameMsgProtocol.GetRankCmd(this);
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof GameMsgProtocol.GetRankCmd) {
+          return mergeFrom((GameMsgProtocol.GetRankCmd)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(GameMsgProtocol.GetRankCmd other) {
+        if (other == GameMsgProtocol.GetRankCmd.getDefaultInstance()) return this;
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        GameMsgProtocol.GetRankCmd parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (GameMsgProtocol.GetRankCmd) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:msg.GetRankCmd)
+    }
+
+    // @@protoc_insertion_point(class_scope:msg.GetRankCmd)
+    private static final GameMsgProtocol.GetRankCmd DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new GameMsgProtocol.GetRankCmd();
+    }
+
+    public static GameMsgProtocol.GetRankCmd getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<GetRankCmd>
+        PARSER = new com.google.protobuf.AbstractParser<GetRankCmd>() {
+      @java.lang.Override
+      public GetRankCmd parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GetRankCmd(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<GetRankCmd> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetRankCmd> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public GameMsgProtocol.GetRankCmd getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface GetRankResultOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:msg.GetRankResult)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     * 排名条目
+     * </pre>
+     *
+     * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+     */
+    java.util.List<GameMsgProtocol.GetRankResult.RankItem>
+        getRankItemList();
+    /**
+     * <pre>
+     * 排名条目
+     * </pre>
+     *
+     * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+     */
+    GameMsgProtocol.GetRankResult.RankItem getRankItem(int index);
+    /**
+     * <pre>
+     * 排名条目
+     * </pre>
+     *
+     * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+     */
+    int getRankItemCount();
+    /**
+     * <pre>
+     * 排名条目
+     * </pre>
+     *
+     * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+     */
+    java.util.List<? extends GameMsgProtocol.GetRankResult.RankItemOrBuilder>
+        getRankItemOrBuilderList();
+    /**
+     * <pre>
+     * 排名条目
+     * </pre>
+     *
+     * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+     */
+    GameMsgProtocol.GetRankResult.RankItemOrBuilder getRankItemOrBuilder(
+        int index);
+  }
+  /**
+   * <pre>
+   * 结果
+   * </pre>
+   *
+   * Protobuf type {@code msg.GetRankResult}
+   */
+  public static final class GetRankResult extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:msg.GetRankResult)
+      GetRankResultOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use GetRankResult.newBuilder() to construct.
+    private GetRankResult(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GetRankResult() {
+      rankItem_ = java.util.Collections.emptyList();
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new GetRankResult();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GetRankResult(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                rankItem_ = new java.util.ArrayList<GameMsgProtocol.GetRankResult.RankItem>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              rankItem_.add(
+                  input.readMessage(GameMsgProtocol.GetRankResult.RankItem.parser(), extensionRegistry));
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          rankItem_ = java.util.Collections.unmodifiableList(rankItem_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return GameMsgProtocol.internal_static_msg_GetRankResult_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return GameMsgProtocol.internal_static_msg_GetRankResult_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              GameMsgProtocol.GetRankResult.class, GameMsgProtocol.GetRankResult.Builder.class);
+    }
+
+    public interface RankItemOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:msg.GetRankResult.RankItem)
+        com.google.protobuf.MessageOrBuilder {
+
+      /**
+       * <pre>
+       * 排名 Id
+       * </pre>
+       *
+       * <code>uint32 rankId = 1;</code>
+       * @return The rankId.
+       */
+      int getRankId();
+
+      /**
+       * <pre>
+       * 用户 Id
+       * </pre>
+       *
+       * <code>uint32 userId = 2;</code>
+       * @return The userId.
+       */
+      int getUserId();
+
+      /**
+       * <pre>
+       * 用户名称
+       * </pre>
+       *
+       * <code>string userName = 3;</code>
+       * @return The userName.
+       */
+      java.lang.String getUserName();
+      /**
+       * <pre>
+       * 用户名称
+       * </pre>
+       *
+       * <code>string userName = 3;</code>
+       * @return The bytes for userName.
+       */
+      com.google.protobuf.ByteString
+          getUserNameBytes();
+
+      /**
+       * <pre>
+       * 英雄形象
+       * </pre>
+       *
+       * <code>string heroAvatar = 4;</code>
+       * @return The heroAvatar.
+       */
+      java.lang.String getHeroAvatar();
+      /**
+       * <pre>
+       * 英雄形象
+       * </pre>
+       *
+       * <code>string heroAvatar = 4;</code>
+       * @return The bytes for heroAvatar.
+       */
+      com.google.protobuf.ByteString
+          getHeroAvatarBytes();
+
+      /**
+       * <pre>
+       * 胜利次数
+       * </pre>
+       *
+       * <code>uint32 win = 5;</code>
+       * @return The win.
+       */
+      int getWin();
+    }
+    /**
+     * <pre>
+     * 用户信息
+     * </pre>
+     *
+     * Protobuf type {@code msg.GetRankResult.RankItem}
+     */
+    public static final class RankItem extends
+        com.google.protobuf.GeneratedMessageV3 implements
+        // @@protoc_insertion_point(message_implements:msg.GetRankResult.RankItem)
+        RankItemOrBuilder {
+    private static final long serialVersionUID = 0L;
+      // Use RankItem.newBuilder() to construct.
+      private RankItem(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+        super(builder);
+      }
+      private RankItem() {
+        userName_ = "";
+        heroAvatar_ = "";
+      }
+
+      @java.lang.Override
+      @SuppressWarnings({"unused"})
+      protected java.lang.Object newInstance(
+          UnusedPrivateParameter unused) {
+        return new RankItem();
+      }
+
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+      getUnknownFields() {
+        return this.unknownFields;
+      }
+      private RankItem(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        this();
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+            com.google.protobuf.UnknownFieldSet.newBuilder();
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+
+                rankId_ = input.readUInt32();
+                break;
+              }
+              case 16: {
+
+                userId_ = input.readUInt32();
+                break;
+              }
+              case 26: {
+                java.lang.String s = input.readStringRequireUtf8();
+
+                userName_ = s;
+                break;
+              }
+              case 34: {
+                java.lang.String s = input.readStringRequireUtf8();
+
+                heroAvatar_ = s;
+                break;
+              }
+              case 40: {
+
+                win_ = input.readUInt32();
+                break;
+              }
+              default: {
+                if (!parseUnknownField(
+                    input, unknownFields, extensionRegistry, tag)) {
+                  done = true;
+                }
+                break;
+              }
+            }
+          }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(this);
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+              e).setUnfinishedMessage(this);
+        } finally {
+          this.unknownFields = unknownFields.build();
+          makeExtensionsImmutable();
+        }
+      }
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return GameMsgProtocol.internal_static_msg_GetRankResult_RankItem_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return GameMsgProtocol.internal_static_msg_GetRankResult_RankItem_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                GameMsgProtocol.GetRankResult.RankItem.class, GameMsgProtocol.GetRankResult.RankItem.Builder.class);
+      }
+
+      public static final int RANKID_FIELD_NUMBER = 1;
+      private int rankId_;
+      /**
+       * <pre>
+       * 排名 Id
+       * </pre>
+       *
+       * <code>uint32 rankId = 1;</code>
+       * @return The rankId.
+       */
+      @java.lang.Override
+      public int getRankId() {
+        return rankId_;
+      }
+
+      public static final int USERID_FIELD_NUMBER = 2;
+      private int userId_;
+      /**
+       * <pre>
+       * 用户 Id
+       * </pre>
+       *
+       * <code>uint32 userId = 2;</code>
+       * @return The userId.
+       */
+      @java.lang.Override
+      public int getUserId() {
+        return userId_;
+      }
+
+      public static final int USERNAME_FIELD_NUMBER = 3;
+      private volatile java.lang.Object userName_;
+      /**
+       * <pre>
+       * 用户名称
+       * </pre>
+       *
+       * <code>string userName = 3;</code>
+       * @return The userName.
+       */
+      @java.lang.Override
+      public java.lang.String getUserName() {
+        java.lang.Object ref = userName_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          userName_ = s;
+          return s;
+        }
+      }
+      /**
+       * <pre>
+       * 用户名称
+       * </pre>
+       *
+       * <code>string userName = 3;</code>
+       * @return The bytes for userName.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getUserNameBytes() {
+        java.lang.Object ref = userName_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          userName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      public static final int HEROAVATAR_FIELD_NUMBER = 4;
+      private volatile java.lang.Object heroAvatar_;
+      /**
+       * <pre>
+       * 英雄形象
+       * </pre>
+       *
+       * <code>string heroAvatar = 4;</code>
+       * @return The heroAvatar.
+       */
+      @java.lang.Override
+      public java.lang.String getHeroAvatar() {
+        java.lang.Object ref = heroAvatar_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          heroAvatar_ = s;
+          return s;
+        }
+      }
+      /**
+       * <pre>
+       * 英雄形象
+       * </pre>
+       *
+       * <code>string heroAvatar = 4;</code>
+       * @return The bytes for heroAvatar.
+       */
+      @java.lang.Override
+      public com.google.protobuf.ByteString
+          getHeroAvatarBytes() {
+        java.lang.Object ref = heroAvatar_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          heroAvatar_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      public static final int WIN_FIELD_NUMBER = 5;
+      private int win_;
+      /**
+       * <pre>
+       * 胜利次数
+       * </pre>
+       *
+       * <code>uint32 win = 5;</code>
+       * @return The win.
+       */
+      @java.lang.Override
+      public int getWin() {
+        return win_;
+      }
+
+      private byte memoizedIsInitialized = -1;
+      @java.lang.Override
+      public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized == 1) return true;
+        if (isInitialized == 0) return false;
+
+        memoizedIsInitialized = 1;
+        return true;
+      }
+
+      @java.lang.Override
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+                          throws java.io.IOException {
+        if (rankId_ != 0) {
+          output.writeUInt32(1, rankId_);
+        }
+        if (userId_ != 0) {
+          output.writeUInt32(2, userId_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(userName_)) {
+          com.google.protobuf.GeneratedMessageV3.writeString(output, 3, userName_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(heroAvatar_)) {
+          com.google.protobuf.GeneratedMessageV3.writeString(output, 4, heroAvatar_);
+        }
+        if (win_ != 0) {
+          output.writeUInt32(5, win_);
+        }
+        unknownFields.writeTo(output);
+      }
+
+      @java.lang.Override
+      public int getSerializedSize() {
+        int size = memoizedSize;
+        if (size != -1) return size;
+
+        size = 0;
+        if (rankId_ != 0) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeUInt32Size(1, rankId_);
+        }
+        if (userId_ != 0) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeUInt32Size(2, userId_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(userName_)) {
+          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, userName_);
+        }
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(heroAvatar_)) {
+          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, heroAvatar_);
+        }
+        if (win_ != 0) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeUInt32Size(5, win_);
+        }
+        size += unknownFields.getSerializedSize();
+        memoizedSize = size;
+        return size;
+      }
+
+      @java.lang.Override
+      public boolean equals(final java.lang.Object obj) {
+        if (obj == this) {
+         return true;
+        }
+        if (!(obj instanceof GameMsgProtocol.GetRankResult.RankItem)) {
+          return super.equals(obj);
+        }
+        GameMsgProtocol.GetRankResult.RankItem other = (GameMsgProtocol.GetRankResult.RankItem) obj;
+
+        if (getRankId()
+            != other.getRankId()) return false;
+        if (getUserId()
+            != other.getUserId()) return false;
+        if (!getUserName()
+            .equals(other.getUserName())) return false;
+        if (!getHeroAvatar()
+            .equals(other.getHeroAvatar())) return false;
+        if (getWin()
+            != other.getWin()) return false;
+        if (!unknownFields.equals(other.unknownFields)) return false;
+        return true;
+      }
+
+      @java.lang.Override
+      public int hashCode() {
+        if (memoizedHashCode != 0) {
+          return memoizedHashCode;
+        }
+        int hash = 41;
+        hash = (19 * hash) + getDescriptor().hashCode();
+        hash = (37 * hash) + RANKID_FIELD_NUMBER;
+        hash = (53 * hash) + getRankId();
+        hash = (37 * hash) + USERID_FIELD_NUMBER;
+        hash = (53 * hash) + getUserId();
+        hash = (37 * hash) + USERNAME_FIELD_NUMBER;
+        hash = (53 * hash) + getUserName().hashCode();
+        hash = (37 * hash) + HEROAVATAR_FIELD_NUMBER;
+        hash = (53 * hash) + getHeroAvatar().hashCode();
+        hash = (37 * hash) + WIN_FIELD_NUMBER;
+        hash = (53 * hash) + getWin();
+        hash = (29 * hash) + unknownFields.hashCode();
+        memoizedHashCode = hash;
+        return hash;
+      }
+
+      public static GameMsgProtocol.GetRankResult.RankItem parseFrom(
+          java.nio.ByteBuffer data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static GameMsgProtocol.GetRankResult.RankItem parseFrom(
+          java.nio.ByteBuffer data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static GameMsgProtocol.GetRankResult.RankItem parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static GameMsgProtocol.GetRankResult.RankItem parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static GameMsgProtocol.GetRankResult.RankItem parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static GameMsgProtocol.GetRankResult.RankItem parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static GameMsgProtocol.GetRankResult.RankItem parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input);
+      }
+      public static GameMsgProtocol.GetRankResult.RankItem parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input, extensionRegistry);
+      }
+      public static GameMsgProtocol.GetRankResult.RankItem parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseDelimitedWithIOException(PARSER, input);
+      }
+      public static GameMsgProtocol.GetRankResult.RankItem parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+      }
+      public static GameMsgProtocol.GetRankResult.RankItem parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input);
+      }
+      public static GameMsgProtocol.GetRankResult.RankItem parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input, extensionRegistry);
+      }
+
+      @java.lang.Override
+      public Builder newBuilderForType() { return newBuilder(); }
+      public static Builder newBuilder() {
+        return DEFAULT_INSTANCE.toBuilder();
+      }
+      public static Builder newBuilder(GameMsgProtocol.GetRankResult.RankItem prototype) {
+        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+      }
+      @java.lang.Override
+      public Builder toBuilder() {
+        return this == DEFAULT_INSTANCE
+            ? new Builder() : new Builder().mergeFrom(this);
+      }
+
+      @java.lang.Override
+      protected Builder newBuilderForType(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+      }
+      /**
+       * <pre>
+       * 用户信息
+       * </pre>
+       *
+       * Protobuf type {@code msg.GetRankResult.RankItem}
+       */
+      public static final class Builder extends
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:msg.GetRankResult.RankItem)
+          GameMsgProtocol.GetRankResult.RankItemOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return GameMsgProtocol.internal_static_msg_GetRankResult_RankItem_descriptor;
+        }
+
+        @java.lang.Override
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return GameMsgProtocol.internal_static_msg_GetRankResult_RankItem_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  GameMsgProtocol.GetRankResult.RankItem.class, GameMsgProtocol.GetRankResult.RankItem.Builder.class);
+        }
+
+        // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.GetRankResult.RankItem.newBuilder()
+        private Builder() {
+          maybeForceBuilderInitialization();
+        }
+
+        private Builder(
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          super(parent);
+          maybeForceBuilderInitialization();
+        }
+        private void maybeForceBuilderInitialization() {
+          if (com.google.protobuf.GeneratedMessageV3
+                  .alwaysUseFieldBuilders) {
+          }
+        }
+        @java.lang.Override
+        public Builder clear() {
+          super.clear();
+          rankId_ = 0;
+
+          userId_ = 0;
+
+          userName_ = "";
+
+          heroAvatar_ = "";
+
+          win_ = 0;
+
+          return this;
+        }
+
+        @java.lang.Override
+        public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+          return GameMsgProtocol.internal_static_msg_GetRankResult_RankItem_descriptor;
+        }
+
+        @java.lang.Override
+        public GameMsgProtocol.GetRankResult.RankItem getDefaultInstanceForType() {
+          return GameMsgProtocol.GetRankResult.RankItem.getDefaultInstance();
+        }
+
+        @java.lang.Override
+        public GameMsgProtocol.GetRankResult.RankItem build() {
+          GameMsgProtocol.GetRankResult.RankItem result = buildPartial();
+          if (!result.isInitialized()) {
+            throw newUninitializedMessageException(result);
+          }
+          return result;
+        }
+
+        @java.lang.Override
+        public GameMsgProtocol.GetRankResult.RankItem buildPartial() {
+          GameMsgProtocol.GetRankResult.RankItem result = new GameMsgProtocol.GetRankResult.RankItem(this);
+          result.rankId_ = rankId_;
+          result.userId_ = userId_;
+          result.userName_ = userName_;
+          result.heroAvatar_ = heroAvatar_;
+          result.win_ = win_;
+          onBuilt();
+          return result;
+        }
+
+        @java.lang.Override
+        public Builder clone() {
+          return super.clone();
+        }
+        @java.lang.Override
+        public Builder setField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            java.lang.Object value) {
+          return super.setField(field, value);
+        }
+        @java.lang.Override
+        public Builder clearField(
+            com.google.protobuf.Descriptors.FieldDescriptor field) {
+          return super.clearField(field);
+        }
+        @java.lang.Override
+        public Builder clearOneof(
+            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          return super.clearOneof(oneof);
+        }
+        @java.lang.Override
+        public Builder setRepeatedField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            int index, java.lang.Object value) {
+          return super.setRepeatedField(field, index, value);
+        }
+        @java.lang.Override
+        public Builder addRepeatedField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            java.lang.Object value) {
+          return super.addRepeatedField(field, value);
+        }
+        @java.lang.Override
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+          if (other instanceof GameMsgProtocol.GetRankResult.RankItem) {
+            return mergeFrom((GameMsgProtocol.GetRankResult.RankItem)other);
+          } else {
+            super.mergeFrom(other);
+            return this;
+          }
+        }
+
+        public Builder mergeFrom(GameMsgProtocol.GetRankResult.RankItem other) {
+          if (other == GameMsgProtocol.GetRankResult.RankItem.getDefaultInstance()) return this;
+          if (other.getRankId() != 0) {
+            setRankId(other.getRankId());
+          }
+          if (other.getUserId() != 0) {
+            setUserId(other.getUserId());
+          }
+          if (!other.getUserName().isEmpty()) {
+            userName_ = other.userName_;
+            onChanged();
+          }
+          if (!other.getHeroAvatar().isEmpty()) {
+            heroAvatar_ = other.heroAvatar_;
+            onChanged();
+          }
+          if (other.getWin() != 0) {
+            setWin(other.getWin());
+          }
+          this.mergeUnknownFields(other.unknownFields);
+          onChanged();
+          return this;
+        }
+
+        @java.lang.Override
+        public final boolean isInitialized() {
+          return true;
+        }
+
+        @java.lang.Override
+        public Builder mergeFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          GameMsgProtocol.GetRankResult.RankItem parsedMessage = null;
+          try {
+            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            parsedMessage = (GameMsgProtocol.GetRankResult.RankItem) e.getUnfinishedMessage();
+            throw e.unwrapIOException();
+          } finally {
+            if (parsedMessage != null) {
+              mergeFrom(parsedMessage);
+            }
+          }
+          return this;
+        }
+
+        private int rankId_ ;
+        /**
+         * <pre>
+         * 排名 Id
+         * </pre>
+         *
+         * <code>uint32 rankId = 1;</code>
+         * @return The rankId.
+         */
+        @java.lang.Override
+        public int getRankId() {
+          return rankId_;
+        }
+        /**
+         * <pre>
+         * 排名 Id
+         * </pre>
+         *
+         * <code>uint32 rankId = 1;</code>
+         * @param value The rankId to set.
+         * @return This builder for chaining.
+         */
+        public Builder setRankId(int value) {
+          
+          rankId_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <pre>
+         * 排名 Id
+         * </pre>
+         *
+         * <code>uint32 rankId = 1;</code>
+         * @return This builder for chaining.
+         */
+        public Builder clearRankId() {
+          
+          rankId_ = 0;
+          onChanged();
+          return this;
+        }
+
+        private int userId_ ;
+        /**
+         * <pre>
+         * 用户 Id
+         * </pre>
+         *
+         * <code>uint32 userId = 2;</code>
+         * @return The userId.
+         */
+        @java.lang.Override
+        public int getUserId() {
+          return userId_;
+        }
+        /**
+         * <pre>
+         * 用户 Id
+         * </pre>
+         *
+         * <code>uint32 userId = 2;</code>
+         * @param value The userId to set.
+         * @return This builder for chaining.
+         */
+        public Builder setUserId(int value) {
+          
+          userId_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <pre>
+         * 用户 Id
+         * </pre>
+         *
+         * <code>uint32 userId = 2;</code>
+         * @return This builder for chaining.
+         */
+        public Builder clearUserId() {
+          
+          userId_ = 0;
+          onChanged();
+          return this;
+        }
+
+        private java.lang.Object userName_ = "";
+        /**
+         * <pre>
+         * 用户名称
+         * </pre>
+         *
+         * <code>string userName = 3;</code>
+         * @return The userName.
+         */
+        public java.lang.String getUserName() {
+          java.lang.Object ref = userName_;
+          if (!(ref instanceof java.lang.String)) {
+            com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            userName_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <pre>
+         * 用户名称
+         * </pre>
+         *
+         * <code>string userName = 3;</code>
+         * @return The bytes for userName.
+         */
+        public com.google.protobuf.ByteString
+            getUserNameBytes() {
+          java.lang.Object ref = userName_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            userName_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <pre>
+         * 用户名称
+         * </pre>
+         *
+         * <code>string userName = 3;</code>
+         * @param value The userName to set.
+         * @return This builder for chaining.
+         */
+        public Builder setUserName(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  
+          userName_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <pre>
+         * 用户名称
+         * </pre>
+         *
+         * <code>string userName = 3;</code>
+         * @return This builder for chaining.
+         */
+        public Builder clearUserName() {
+          
+          userName_ = getDefaultInstance().getUserName();
+          onChanged();
+          return this;
+        }
+        /**
+         * <pre>
+         * 用户名称
+         * </pre>
+         *
+         * <code>string userName = 3;</code>
+         * @param value The bytes for userName to set.
+         * @return This builder for chaining.
+         */
+        public Builder setUserNameBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+          
+          userName_ = value;
+          onChanged();
+          return this;
+        }
+
+        private java.lang.Object heroAvatar_ = "";
+        /**
+         * <pre>
+         * 英雄形象
+         * </pre>
+         *
+         * <code>string heroAvatar = 4;</code>
+         * @return The heroAvatar.
+         */
+        public java.lang.String getHeroAvatar() {
+          java.lang.Object ref = heroAvatar_;
+          if (!(ref instanceof java.lang.String)) {
+            com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            heroAvatar_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <pre>
+         * 英雄形象
+         * </pre>
+         *
+         * <code>string heroAvatar = 4;</code>
+         * @return The bytes for heroAvatar.
+         */
+        public com.google.protobuf.ByteString
+            getHeroAvatarBytes() {
+          java.lang.Object ref = heroAvatar_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            heroAvatar_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <pre>
+         * 英雄形象
+         * </pre>
+         *
+         * <code>string heroAvatar = 4;</code>
+         * @param value The heroAvatar to set.
+         * @return This builder for chaining.
+         */
+        public Builder setHeroAvatar(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  
+          heroAvatar_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <pre>
+         * 英雄形象
+         * </pre>
+         *
+         * <code>string heroAvatar = 4;</code>
+         * @return This builder for chaining.
+         */
+        public Builder clearHeroAvatar() {
+          
+          heroAvatar_ = getDefaultInstance().getHeroAvatar();
+          onChanged();
+          return this;
+        }
+        /**
+         * <pre>
+         * 英雄形象
+         * </pre>
+         *
+         * <code>string heroAvatar = 4;</code>
+         * @param value The bytes for heroAvatar to set.
+         * @return This builder for chaining.
+         */
+        public Builder setHeroAvatarBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+          
+          heroAvatar_ = value;
+          onChanged();
+          return this;
+        }
+
+        private int win_ ;
+        /**
+         * <pre>
+         * 胜利次数
+         * </pre>
+         *
+         * <code>uint32 win = 5;</code>
+         * @return The win.
+         */
+        @java.lang.Override
+        public int getWin() {
+          return win_;
+        }
+        /**
+         * <pre>
+         * 胜利次数
+         * </pre>
+         *
+         * <code>uint32 win = 5;</code>
+         * @param value The win to set.
+         * @return This builder for chaining.
+         */
+        public Builder setWin(int value) {
+          
+          win_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <pre>
+         * 胜利次数
+         * </pre>
+         *
+         * <code>uint32 win = 5;</code>
+         * @return This builder for chaining.
+         */
+        public Builder clearWin() {
+          
+          win_ = 0;
+          onChanged();
+          return this;
+        }
+        @java.lang.Override
+        public final Builder setUnknownFields(
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
+          return super.setUnknownFields(unknownFields);
+        }
+
+        @java.lang.Override
+        public final Builder mergeUnknownFields(
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
+          return super.mergeUnknownFields(unknownFields);
+        }
+
+
+        // @@protoc_insertion_point(builder_scope:msg.GetRankResult.RankItem)
+      }
+
+      // @@protoc_insertion_point(class_scope:msg.GetRankResult.RankItem)
+      private static final GameMsgProtocol.GetRankResult.RankItem DEFAULT_INSTANCE;
+      static {
+        DEFAULT_INSTANCE = new GameMsgProtocol.GetRankResult.RankItem();
+      }
+
+      public static GameMsgProtocol.GetRankResult.RankItem getDefaultInstance() {
+        return DEFAULT_INSTANCE;
+      }
+
+      private static final com.google.protobuf.Parser<RankItem>
+          PARSER = new com.google.protobuf.AbstractParser<RankItem>() {
+        @java.lang.Override
+        public RankItem parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return new RankItem(input, extensionRegistry);
+        }
+      };
+
+      public static com.google.protobuf.Parser<RankItem> parser() {
+        return PARSER;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<RankItem> getParserForType() {
+        return PARSER;
+      }
+
+      @java.lang.Override
+      public GameMsgProtocol.GetRankResult.RankItem getDefaultInstanceForType() {
+        return DEFAULT_INSTANCE;
+      }
+
+    }
+
+    public static final int RANKITEM_FIELD_NUMBER = 1;
+    private java.util.List<GameMsgProtocol.GetRankResult.RankItem> rankItem_;
+    /**
+     * <pre>
+     * 排名条目
+     * </pre>
+     *
+     * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+     */
+    @java.lang.Override
+    public java.util.List<GameMsgProtocol.GetRankResult.RankItem> getRankItemList() {
+      return rankItem_;
+    }
+    /**
+     * <pre>
+     * 排名条目
+     * </pre>
+     *
+     * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends GameMsgProtocol.GetRankResult.RankItemOrBuilder>
+        getRankItemOrBuilderList() {
+      return rankItem_;
+    }
+    /**
+     * <pre>
+     * 排名条目
+     * </pre>
+     *
+     * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+     */
+    @java.lang.Override
+    public int getRankItemCount() {
+      return rankItem_.size();
+    }
+    /**
+     * <pre>
+     * 排名条目
+     * </pre>
+     *
+     * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+     */
+    @java.lang.Override
+    public GameMsgProtocol.GetRankResult.RankItem getRankItem(int index) {
+      return rankItem_.get(index);
+    }
+    /**
+     * <pre>
+     * 排名条目
+     * </pre>
+     *
+     * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+     */
+    @java.lang.Override
+    public GameMsgProtocol.GetRankResult.RankItemOrBuilder getRankItemOrBuilder(
+        int index) {
+      return rankItem_.get(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      for (int i = 0; i < rankItem_.size(); i++) {
+        output.writeMessage(1, rankItem_.get(i));
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      for (int i = 0; i < rankItem_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, rankItem_.get(i));
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof GameMsgProtocol.GetRankResult)) {
+        return super.equals(obj);
+      }
+      GameMsgProtocol.GetRankResult other = (GameMsgProtocol.GetRankResult) obj;
+
+      if (!getRankItemList()
+          .equals(other.getRankItemList())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getRankItemCount() > 0) {
+        hash = (37 * hash) + RANKITEM_FIELD_NUMBER;
+        hash = (53 * hash) + getRankItemList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static GameMsgProtocol.GetRankResult parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static GameMsgProtocol.GetRankResult parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static GameMsgProtocol.GetRankResult parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static GameMsgProtocol.GetRankResult parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static GameMsgProtocol.GetRankResult parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static GameMsgProtocol.GetRankResult parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static GameMsgProtocol.GetRankResult parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static GameMsgProtocol.GetRankResult parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static GameMsgProtocol.GetRankResult parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static GameMsgProtocol.GetRankResult parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static GameMsgProtocol.GetRankResult parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static GameMsgProtocol.GetRankResult parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(GameMsgProtocol.GetRankResult prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     * 结果
+     * </pre>
+     *
+     * Protobuf type {@code msg.GetRankResult}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:msg.GetRankResult)
+        GameMsgProtocol.GetRankResultOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return GameMsgProtocol.internal_static_msg_GetRankResult_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return GameMsgProtocol.internal_static_msg_GetRankResult_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                GameMsgProtocol.GetRankResult.class, GameMsgProtocol.GetRankResult.Builder.class);
+      }
+
+      // Construct using org.tinygame.legendstory.msg.GameMsgProtocol.GetRankResult.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+          getRankItemFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        if (rankItemBuilder_ == null) {
+          rankItem_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          rankItemBuilder_.clear();
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return GameMsgProtocol.internal_static_msg_GetRankResult_descriptor;
+      }
+
+      @java.lang.Override
+      public GameMsgProtocol.GetRankResult getDefaultInstanceForType() {
+        return GameMsgProtocol.GetRankResult.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public GameMsgProtocol.GetRankResult build() {
+        GameMsgProtocol.GetRankResult result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public GameMsgProtocol.GetRankResult buildPartial() {
+        GameMsgProtocol.GetRankResult result = new GameMsgProtocol.GetRankResult(this);
+        int from_bitField0_ = bitField0_;
+        if (rankItemBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            rankItem_ = java.util.Collections.unmodifiableList(rankItem_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.rankItem_ = rankItem_;
+        } else {
+          result.rankItem_ = rankItemBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof GameMsgProtocol.GetRankResult) {
+          return mergeFrom((GameMsgProtocol.GetRankResult)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(GameMsgProtocol.GetRankResult other) {
+        if (other == GameMsgProtocol.GetRankResult.getDefaultInstance()) return this;
+        if (rankItemBuilder_ == null) {
+          if (!other.rankItem_.isEmpty()) {
+            if (rankItem_.isEmpty()) {
+              rankItem_ = other.rankItem_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureRankItemIsMutable();
+              rankItem_.addAll(other.rankItem_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.rankItem_.isEmpty()) {
+            if (rankItemBuilder_.isEmpty()) {
+              rankItemBuilder_.dispose();
+              rankItemBuilder_ = null;
+              rankItem_ = other.rankItem_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              rankItemBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getRankItemFieldBuilder() : null;
+            } else {
+              rankItemBuilder_.addAllMessages(other.rankItem_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        GameMsgProtocol.GetRankResult parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (GameMsgProtocol.GetRankResult) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.util.List<GameMsgProtocol.GetRankResult.RankItem> rankItem_ =
+        java.util.Collections.emptyList();
+      private void ensureRankItemIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          rankItem_ = new java.util.ArrayList<GameMsgProtocol.GetRankResult.RankItem>(rankItem_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          GameMsgProtocol.GetRankResult.RankItem, GameMsgProtocol.GetRankResult.RankItem.Builder, GameMsgProtocol.GetRankResult.RankItemOrBuilder> rankItemBuilder_;
+
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public java.util.List<GameMsgProtocol.GetRankResult.RankItem> getRankItemList() {
+        if (rankItemBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(rankItem_);
+        } else {
+          return rankItemBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public int getRankItemCount() {
+        if (rankItemBuilder_ == null) {
+          return rankItem_.size();
+        } else {
+          return rankItemBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public GameMsgProtocol.GetRankResult.RankItem getRankItem(int index) {
+        if (rankItemBuilder_ == null) {
+          return rankItem_.get(index);
+        } else {
+          return rankItemBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public Builder setRankItem(
+          int index, GameMsgProtocol.GetRankResult.RankItem value) {
+        if (rankItemBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRankItemIsMutable();
+          rankItem_.set(index, value);
+          onChanged();
+        } else {
+          rankItemBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public Builder setRankItem(
+          int index, GameMsgProtocol.GetRankResult.RankItem.Builder builderForValue) {
+        if (rankItemBuilder_ == null) {
+          ensureRankItemIsMutable();
+          rankItem_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          rankItemBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public Builder addRankItem(GameMsgProtocol.GetRankResult.RankItem value) {
+        if (rankItemBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRankItemIsMutable();
+          rankItem_.add(value);
+          onChanged();
+        } else {
+          rankItemBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public Builder addRankItem(
+          int index, GameMsgProtocol.GetRankResult.RankItem value) {
+        if (rankItemBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRankItemIsMutable();
+          rankItem_.add(index, value);
+          onChanged();
+        } else {
+          rankItemBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public Builder addRankItem(
+          GameMsgProtocol.GetRankResult.RankItem.Builder builderForValue) {
+        if (rankItemBuilder_ == null) {
+          ensureRankItemIsMutable();
+          rankItem_.add(builderForValue.build());
+          onChanged();
+        } else {
+          rankItemBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public Builder addRankItem(
+          int index, GameMsgProtocol.GetRankResult.RankItem.Builder builderForValue) {
+        if (rankItemBuilder_ == null) {
+          ensureRankItemIsMutable();
+          rankItem_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          rankItemBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public Builder addAllRankItem(
+          java.lang.Iterable<? extends GameMsgProtocol.GetRankResult.RankItem> values) {
+        if (rankItemBuilder_ == null) {
+          ensureRankItemIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, rankItem_);
+          onChanged();
+        } else {
+          rankItemBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public Builder clearRankItem() {
+        if (rankItemBuilder_ == null) {
+          rankItem_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          rankItemBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public Builder removeRankItem(int index) {
+        if (rankItemBuilder_ == null) {
+          ensureRankItemIsMutable();
+          rankItem_.remove(index);
+          onChanged();
+        } else {
+          rankItemBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public GameMsgProtocol.GetRankResult.RankItem.Builder getRankItemBuilder(
+          int index) {
+        return getRankItemFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public GameMsgProtocol.GetRankResult.RankItemOrBuilder getRankItemOrBuilder(
+          int index) {
+        if (rankItemBuilder_ == null) {
+          return rankItem_.get(index);  } else {
+          return rankItemBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public java.util.List<? extends GameMsgProtocol.GetRankResult.RankItemOrBuilder>
+           getRankItemOrBuilderList() {
+        if (rankItemBuilder_ != null) {
+          return rankItemBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(rankItem_);
+        }
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public GameMsgProtocol.GetRankResult.RankItem.Builder addRankItemBuilder() {
+        return getRankItemFieldBuilder().addBuilder(
+            GameMsgProtocol.GetRankResult.RankItem.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public GameMsgProtocol.GetRankResult.RankItem.Builder addRankItemBuilder(
+          int index) {
+        return getRankItemFieldBuilder().addBuilder(
+            index, GameMsgProtocol.GetRankResult.RankItem.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * 排名条目
+       * </pre>
+       *
+       * <code>repeated .msg.GetRankResult.RankItem rankItem = 1;</code>
+       */
+      public java.util.List<GameMsgProtocol.GetRankResult.RankItem.Builder>
+           getRankItemBuilderList() {
+        return getRankItemFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          GameMsgProtocol.GetRankResult.RankItem, GameMsgProtocol.GetRankResult.RankItem.Builder, GameMsgProtocol.GetRankResult.RankItemOrBuilder>
+          getRankItemFieldBuilder() {
+        if (rankItemBuilder_ == null) {
+          rankItemBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              GameMsgProtocol.GetRankResult.RankItem, GameMsgProtocol.GetRankResult.RankItem.Builder, GameMsgProtocol.GetRankResult.RankItemOrBuilder>(
+                  rankItem_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          rankItem_ = null;
+        }
+        return rankItemBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:msg.GetRankResult)
+    }
+
+    // @@protoc_insertion_point(class_scope:msg.GetRankResult)
+    private static final GameMsgProtocol.GetRankResult DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new GameMsgProtocol.GetRankResult();
+    }
+
+    public static GameMsgProtocol.GetRankResult getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<GetRankResult>
+        PARSER = new com.google.protobuf.AbstractParser<GetRankResult>() {
+      @java.lang.Override
+      public GetRankResult parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GetRankResult(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<GetRankResult> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GetRankResult> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public GameMsgProtocol.GetRankResult getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -13690,6 +16119,21 @@ public final class GameMsgProtocol {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_msg_SelectHeroResult_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_msg_GetRankCmd_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_msg_GetRankCmd_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_msg_GetRankResult_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_msg_GetRankResult_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_msg_GetRankResult_RankItem_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_msg_GetRankResult_RankItem_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -13729,18 +16173,23 @@ public final class GameMsgProtocol {
       "G\n\017UserLoginResult\022\016\n\006userId\030\001 \001(\r\022\020\n\010us" +
       "erName\030\002 \001(\t\022\022\n\nheroAvatar\030\003 \001(\t\"#\n\rSele" +
       "ctHeroCmd\022\022\n\nheroAvatar\030\001 \001(\t\"&\n\020SelectH" +
-      "eroResult\022\022\n\nheroAvatar\030\001 \001(\t*\214\003\n\007MsgCod" +
-      "e\022\022\n\016USER_ENTRY_CMD\020\000\022\025\n\021USER_ENTRY_RESU" +
-      "LT\020\001\022\030\n\024WHO_ELSE_IS_HERE_CMD\020\002\022\033\n\027WHO_EL" +
-      "SE_IS_HERE_RESULT\020\003\022\024\n\020USER_MOVE_TO_CMD\020" +
-      "\004\022\027\n\023USER_MOVE_TO_RESULT\020\005\022\024\n\020USER_QUIT_" +
-      "RESULT\020\006\022\021\n\rUSER_STOP_CMD\020\007\022\024\n\020USER_STOP" +
-      "_RESULT\020\010\022\021\n\rUSER_ATTK_CMD\020\t\022\024\n\020USER_ATT" +
-      "K_RESULT\020\n\022\033\n\027USER_SUBTRACT_HP_RESULT\020\013\022" +
-      "\023\n\017USER_DIE_RESULT\020\014\022\022\n\016USER_LOGIN_CMD\020\r" +
-      "\022\025\n\021USER_LOGIN_RESULT\020\016\022\023\n\017SELECT_HERO_C" +
-      "MD\020\017\022\026\n\022SELECT_HERO_RESULT\020\020B\036\n\034org.tiny" +
-      "game.legendstory.msgb\006proto3"
+      "eroResult\022\022\n\nheroAvatar\030\001 \001(\t\"\014\n\nGetRank" +
+      "Cmd\"\235\001\n\rGetRankResult\022-\n\010rankItem\030\001 \003(\0132" +
+      "\033.msg.GetRankResult.RankItem\032]\n\010RankItem" +
+      "\022\016\n\006rankId\030\001 \001(\r\022\016\n\006userId\030\002 \001(\r\022\020\n\010user" +
+      "Name\030\003 \001(\t\022\022\n\nheroAvatar\030\004 \001(\t\022\013\n\003win\030\005 " +
+      "\001(\r*\263\003\n\007MsgCode\022\022\n\016USER_ENTRY_CMD\020\000\022\025\n\021U" +
+      "SER_ENTRY_RESULT\020\001\022\030\n\024WHO_ELSE_IS_HERE_C" +
+      "MD\020\002\022\033\n\027WHO_ELSE_IS_HERE_RESULT\020\003\022\024\n\020USE" +
+      "R_MOVE_TO_CMD\020\004\022\027\n\023USER_MOVE_TO_RESULT\020\005" +
+      "\022\024\n\020USER_QUIT_RESULT\020\006\022\021\n\rUSER_STOP_CMD\020" +
+      "\007\022\024\n\020USER_STOP_RESULT\020\010\022\021\n\rUSER_ATTK_CMD" +
+      "\020\t\022\024\n\020USER_ATTK_RESULT\020\n\022\033\n\027USER_SUBTRAC" +
+      "T_HP_RESULT\020\013\022\023\n\017USER_DIE_RESULT\020\014\022\022\n\016US" +
+      "ER_LOGIN_CMD\020\r\022\025\n\021USER_LOGIN_RESULT\020\016\022\023\n" +
+      "\017SELECT_HERO_CMD\020\017\022\026\n\022SELECT_HERO_RESULT" +
+      "\020\020\022\020\n\014GET_RANK_CMD\020\021\022\023\n\017GET_RANK_RESULT\020" +
+      "\022B\034\n\032org.tinygame.herostory.msgb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -13860,6 +16309,24 @@ public final class GameMsgProtocol {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_msg_SelectHeroResult_descriptor,
         new java.lang.String[] { "HeroAvatar", });
+    internal_static_msg_GetRankCmd_descriptor =
+      getDescriptor().getMessageTypes().get(17);
+    internal_static_msg_GetRankCmd_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_msg_GetRankCmd_descriptor,
+        new java.lang.String[] { });
+    internal_static_msg_GetRankResult_descriptor =
+      getDescriptor().getMessageTypes().get(18);
+    internal_static_msg_GetRankResult_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_msg_GetRankResult_descriptor,
+        new java.lang.String[] { "RankItem", });
+    internal_static_msg_GetRankResult_RankItem_descriptor =
+      internal_static_msg_GetRankResult_descriptor.getNestedTypes().get(0);
+    internal_static_msg_GetRankResult_RankItem_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_msg_GetRankResult_RankItem_descriptor,
+        new java.lang.String[] { "RankId", "UserId", "UserName", "HeroAvatar", "Win", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
